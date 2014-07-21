@@ -36,13 +36,64 @@ function my_custom_post_type_atoms() {
     'description'   => 'The basic building blocks of a story',
     'public'        => true,
     'menu_position' => 5,
-    'supports'      => array( 'title', 'editor', 'excerpt' ),
+    'supports'      => array( 'title', 'excerpt' ),
     'has_archive'   => true,
     'rewrite' => array('slug' => 'atoms'),
   );
   register_post_type( 'atom', $args ); 
 }
 add_action( 'init', 'my_custom_post_type_atoms' );
+
+
+
+
+// Meta boxes for Atoms
+// Value
+function atom_value() {
+  add_meta_box( 
+    'atom_value',
+    __( 'Value', 'myplugin_textdomain' ),
+    'atom_value_box_content',
+    'atom',
+    'normal',
+    'high'
+  );
+}
+add_action( 'add_meta_boxes', 'atom_value' );
+
+// Displaying the Value
+function atom_value_box_content( $post ) {
+  wp_nonce_field( plugin_basename( __FILE__ ), 'atom_value_content_nonce' );
+  echo '<label for="atom_value"></label>';
+  
+  $value = get_post_meta( $post->ID, 'atom_value', true );
+  echo '<input type="text" id="atom_value" name="atom_value" placeholder="' . $value . '" />';
+}
+
+// Handling the form for value
+function atom_value_save( $post_id ) {
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+  return;
+
+  if ( !wp_verify_nonce( $_POST['atom_value_content_nonce'], plugin_basename( __FILE__ ) ) )
+  return;
+
+  if ( 'page' == $_POST['post_type'] ) {
+    if ( !current_user_can( 'edit_page', $post_id ) )
+    return;
+  } else {
+    if ( !current_user_can( 'edit_post', $post_id ) )
+    return;
+  }
+  $atom_value = $_POST['atom_value'];
+  update_post_meta( $post_id, 'atom_value', $atom_value );
+}
+add_action( 'save_post', 'atom_value_save' );
+
+
+
+
+
 
 // Categories for Atoms
 function my_taxonomies_atom() {
@@ -70,7 +121,7 @@ add_action( 'init', 'my_taxonomies_atom', 0 );
 
 
 // Status messages
-function my_updated_status_messages_for_custom_post_types( $messages ) {
+function my_updated_status_messages_for_atoms( $messages ) {
   global $post, $post_ID;
   $messages['atom'] = array(
     0 => '', 
@@ -87,6 +138,6 @@ function my_updated_status_messages_for_custom_post_types( $messages ) {
   );
   return $messages;
 }
-add_filter( 'post_updated_messages', 'my_updated_status_messages_for_custom_post_types' );
+add_filter( 'post_updated_messages', 'my_updated_status_messages_for_atoms' );
 
 ?>
