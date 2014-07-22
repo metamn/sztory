@@ -19,3 +19,15 @@ $heading-level-4: 6.8462em;
     font-size: $heading-level-4;  
   }
 }
+
+@mixin h2 {
+  font-size: $heading-level-2;
+    
+  @include below-tablet {
+    font-size: $heading-level-1;  
+  } 
+  
+  @include large-screen-and-up {
+    font-size: $heading-level-3;  
+  }
+}

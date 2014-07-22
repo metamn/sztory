@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -30,16 +30,13 @@ html body { font-size: 100%; line-height: 1.25; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 
-html, body, .container, .container section { height: 100%; position: relative; }
-
-html body header { width: 100%; float: left; font-family: "Old Standard TT", serif; font-style: italic; font-weight: 700; }
-html body header #logo { width: 7.5em; height: 7.5em; -webkit-border-radius: 7.5em; -moz-border-radius: 7.5em; -ms-border-radius: 7.5em; -o-border-radius: 7.5em; border-radius: 7.5em; border: 0.3125em solid black; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); text-align: center; position: fixed; margin: 1.25em 0; }
-html body header #logo span { margin-top: calc(3.75em - 0.625em); }
-html body header #logo span:nth-of-type(1) { float: left; margin-left: 0.625em; }
-html body header #logo span:nth-of-type(2) { float: right; margin-right: 0.625em; }
-html body #title { width: 100%; float: left; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; position: relative; font-family: "Old Standard TT", serif; font-style: italic; font-size: 4.2308em; }
-@media only screen and (max-width: 47.999em) { html body #title { font-size: 2.6154em; } }
-@media only screen and (min-width: 90.001em) { html body #title { font-size: 6.8462em; } }
+html body #title { width: 100%; float: left; overflow: hidden; }
+html body #title article { margin-top: 6.25em; margin-left: 6.45833em; }
+@media only screen and (max-width: 47.999em) { html body #title article { margin-top: 5em; margin-left: 2.5em; }
+  html body #title article h1 { position: relative; z-index: 1; }
+  html body #title article img { position: relative; top: -7.5em; left: -5em; } }
+html body #title article h1, html body #title article aside { float: left; }
+html body #title article h1 { font-family: "Lato", sans-serif; text-transform: uppercase; font-size: 1.6154em; display: inline-block; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
