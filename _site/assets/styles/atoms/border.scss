@@ -1,0 +1,3 @@
+@mixin border($size: $gutter/4, $c: $color) {
+  border: $size solid $c;
+}

@@ -1,0 +1,8 @@
+@mixin title {
+  @include block;
+  @include center;
+  position: relative;
+  
+  @include font(title);
+  @include h1;
+}
