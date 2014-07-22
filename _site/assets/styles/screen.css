@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Lato|Old+Standard+TT:400,400italic|Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -21,6 +21,14 @@ html body { font-size: 100%; line-height: 1.25; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 
+/*
+
+- Rammetto+One|Wire+One
+- Bowlby+One+SC|Oswald:300
+- Averia+Serif+Libre
+- Concerta+One
+
+*/
 /* Center vertically or horizontally
 - http://davidwalsh.name/css-vertical-center
 */
@@ -30,16 +38,16 @@ html body { font-size: 100%; line-height: 1.25; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 
+html, body, .container, .container section { height: 100%; position: relative; }
+
 html body #title { width: 100%; float: left; overflow: hidden; }
 html body #title article { margin-top: 6.25em; margin-left: 6.45833em; }
 @media only screen and (max-width: 47.999em) { html body #title article { margin-top: 5em; margin-left: 2.5em; }
   html body #title article h1 { position: relative; z-index: 1; }
   html body #title article img { position: relative; top: -7.5em; left: -5em; } }
 html body #title article h1, html body #title article aside { float: left; }
-html body #title article h1 { font-family: "Lato", sans-serif; text-transform: uppercase; font-size: 1.6154em; display: inline-block; }
-html body #title article h1 span { display: block; }
-html body #title article h1 span:first-of-type { margin-left: 3px; }
-html body #title article h1 span:last-of-type:before { content: '\2014'; color: red; }
+html body #title article h1 { font-family: "Rammetto One"; font-size: 1.6154em; display: inline-block; }
+html body #title article h1 span { display: block; font-family: 'Wire One'; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

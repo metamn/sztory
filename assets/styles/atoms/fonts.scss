@@ -1,29 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Lato|Old+Standard+TT:400,400italic|Shadows+Into+Light);
+/*
+
+- Rammetto+One|Wire+One
+- Bowlby+One+SC|Oswald:300
+- Averia+Serif+Libre
+- Concerta+One
+
+*/
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One);
 
 // Font familes
-$serif: 'Old Standard TT', serif;
-$sans-serif: 'Lato', sans-serif;
-$cursive: 'Shadows Into Light', cursive;
-
-
-// Mixins
-@mixin font($type: body) {
-  @if ($type == body) {
-    @include font-body;
-  
-  } @elseif ($type == title) {
-    @include font-title;
-  
-  } 
-}
-
-@mixin font-title {
-  font-family: $sans-serif;
-  text-transform: uppercase;
-}
-
-@mixin font-body {
-  font-family: $sans-serif;
-  font-weight: 300;
-  font-size: $heading-level-2;
-}
