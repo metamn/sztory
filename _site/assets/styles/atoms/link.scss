@@ -1,6 +1,0 @@
-@mixin link($fore: $product, $back: transparent) {
-  a, a:visited {
-    @include color($fore, $back);
-    text-decoration: none;
-  }
-}
