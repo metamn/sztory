@@ -1,0 +1,9 @@
+@include full-screen;
+
+html {
+  body {
+    header {
+      @include header;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Old+Standard+TT:400italic);
+
+// Font familes
+$serif: 'Old Standard TT', serif;
+$sans-serif: 'Lato', sans-serif;
+
+
+// Heading sizes
+// - based on lamb.cc/typography using Fibonacci numbers
+$heading-level-1: 1.6154em;
+$heading-level-2: 2.6154em;
+$heading-level-3: 4.2308em;
+
+
+
+// Mixins
+@mixin font($type: body) {
+  @if ($type == strapline) {
+    @include font-strapline;
+  
+  } @elseif ($type == menu) {
+    @include font-menu;
+  
+  } @elseif ($type == csongor) {
+    @include font-csongor;
+  } 
+}
+
+
+@mixin font-csongor {
+  font-family: $serif;
+  font-style: italic;
+}
+
+@mixin font-menu {
+  font-family: $sans-serif;
+}
+
+@mixin font-strapline {
+  font-family: $sans-serif;
+  font-weight: 300;
+  font-size: $heading-level-2;
+}
