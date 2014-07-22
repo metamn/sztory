@@ -1,0 +1,12 @@
+@mixin header {
+  @include font(title);
+  
+  #logo {
+    @include logo($gutter * 6);
+    @include center(horizontal);
+    
+    position: fixed;
+    margin: $gutter 0;
+  }
+}
+
