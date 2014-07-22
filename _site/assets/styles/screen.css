@@ -43,7 +43,7 @@ html, body, .container, .container section { height: 100%; position: relative; }
 html body #title { width: 100%; float: left; overflow: hidden; }
 html body #title article { width: 100%; float: left; margin-top: 6.25em; margin-left: 6.45833em; position: relative; }
 @media only screen and (max-width: 47.999em) { html body #title article { margin-top: 5em; margin-left: 2.5em; } }
-html body #title article h1 { position: relative; z-index: 1; }
+html body #title article h1 { position: relative; z-index: 1; top: 6.25em; }
 html body #title article aside { position: relative; top: -6.25em; }
 @media only screen and (max-width: 47.999em) { html body #title article aside { top: -7.5em; left: -5em; } }
 @media only screen and (min-width: 49em) and (max-width: 90em) { html body #title article aside { top: -12.5em; left: 6.45833em; } }
