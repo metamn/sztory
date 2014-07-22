@@ -1,7 +1,7 @@
 html {
   body {
-    header {
-      @include header;
+    #title {
+      @include title;
     }
   }
 }

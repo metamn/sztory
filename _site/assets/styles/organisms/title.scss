@@ -1,0 +1,54 @@
+@mixin title {
+  @include block;
+  overflow: hidden;
+  
+  article {
+    @include title-position;
+    
+    h1, aside {
+      float: left;
+    }
+    
+    h1 {
+      @include font(title);
+      font-size: $heading-level-1;
+      display: inline-block;
+      
+      span {;
+        display: block;
+        
+        &:first-of-type {
+          margin-left: 3px;
+        }
+        
+        &:last-of-type {
+          &:before {
+            content: '\2014';
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin title-position {
+  margin-top: row(1);
+  margin-left: col(1);
+  
+  @include below-tablet {
+    margin-top: $gutter * 4;
+    margin-left: $gutter * 2;
+
+    h1 {
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      position: relative;
+      top: -$gutter * 6;
+      left: -$gutter * 4;
+    }
+  }
+}

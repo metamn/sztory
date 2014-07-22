@@ -1,5 +1,8 @@
 @mixin header {
+  @include block;
+  
   @include font(title);
+  font-weight: 700;
   
   #logo {
     @include logo($gutter * 6);

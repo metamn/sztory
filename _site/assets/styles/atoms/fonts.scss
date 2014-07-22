@@ -1,16 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lato|Old+Standard+TT:400,400italic|Shadows+Into+Light);
 
 // Font familes
 $serif: 'Old Standard TT', serif;
 $sans-serif: 'Lato', sans-serif;
-
-
-// Heading sizes
-// - based on lamb.cc/typography using Fibonacci numbers
-$heading-level-1: 1.6154em;
-$heading-level-2: 2.6154em;
-$heading-level-3: 4.2308em;
-
+$cursive: 'Shadows Into Light', cursive;
 
 
 // Mixins
@@ -24,11 +17,9 @@ $heading-level-3: 4.2308em;
   } 
 }
 
-
 @mixin font-title {
-  font-family: $serif;
-  font-style: italic;
-  font-weight: 700;
+  font-family: $sans-serif;
+  text-transform: uppercase;
 }
 
 @mixin font-body {
