@@ -23,7 +23,7 @@ html body { font-size: 100%; line-height: 1.25; }
 
 /*
 
-- Rammetto+One|Wire+One
+- Rammetto+One|Wire+One   || Gruppo
 - Bowlby+One+SC|Oswald:300
 - Averia+Serif+Libre
 - Concerta+One
@@ -41,13 +41,15 @@ html body { font-size: 100%; line-height: 1.25; }
 html, body, .container, .container section { height: 100%; position: relative; }
 
 html body #title { width: 100%; float: left; overflow: hidden; }
-html body #title article { margin-top: 6.25em; margin-left: 6.45833em; }
-@media only screen and (max-width: 47.999em) { html body #title article { margin-top: 5em; margin-left: 2.5em; }
-  html body #title article h1 { position: relative; z-index: 1; }
-  html body #title article img { position: relative; top: -7.5em; left: -5em; } }
-html body #title article h1, html body #title article aside { float: left; }
-html body #title article h1 { font-family: "Rammetto One"; font-size: 1.6154em; display: inline-block; }
-html body #title article h1 span { display: block; font-family: 'Wire One'; }
+html body #title article { width: 100%; float: left; margin-top: 6.25em; margin-left: 6.45833em; position: relative; }
+@media only screen and (max-width: 47.999em) { html body #title article { margin-top: 5em; margin-left: 2.5em; } }
+html body #title article h1 { position: relative; z-index: 1; }
+html body #title article aside { position: relative; top: -6.25em; }
+@media only screen and (max-width: 47.999em) { html body #title article aside { top: -7.5em; left: -5em; } }
+@media only screen and (min-width: 49em) and (max-width: 90em) { html body #title article aside { top: -12.5em; left: 6.45833em; } }
+@media only screen and (min-width: 90.001em) { html body #title article aside { left: 12.91667em; } }
+html body #title article h1 { font-family: "Rammetto One"; font-size: 1.6154em; }
+html body #title article h1 span { font-family: 'Wire One'; display: block; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

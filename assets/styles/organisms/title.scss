@@ -1,27 +1,24 @@
-
 @mixin title {
   @include block;
   overflow: hidden;
   
   article {
+    @include block;
     @include title-position;
     
-    h1, aside {
-      float: left;
-    }
-    
     h1 {
-      font-family: "Rammetto One";
+      @include font(title);
       font-size: $heading-level-1;
-      display: inline-block;
       
       span {
+        @include font(subtitle);
         display: block;
-        font-family: 'Wire One';
       }
     }
   }
 }
+
+
 
 @mixin title-position {
   margin-top: row(1);
@@ -30,16 +27,31 @@
   @include below-tablet {
     margin-top: $gutter * 4;
     margin-left: $gutter * 2;
-
-    h1 {
-      position: relative;
-      z-index: 1;
-    }
-
-    img {
-      position: relative;
+  }
+  
+  position: relative;
+  
+  h1 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  aside {
+    position: relative;
+    top: row(-1);
+    
+    @include below-tablet {
       top: -$gutter * 6;
       left: -$gutter * 4;
+    }
+    
+    @include normal-screen {
+      top: row(-2);
+      left: col(1);
+    }
+    
+    @include large-screen-and-up {
+      left: col(2);
     }
   }
 }

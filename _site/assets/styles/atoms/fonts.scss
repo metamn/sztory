@@ -1,6 +1,6 @@
 /*
 
-- Rammetto+One|Wire+One
+- Rammetto+One|Wire+One   || Gruppo
 - Bowlby+One+SC|Oswald:300
 - Averia+Serif+Libre
 - Concerta+One
@@ -13,4 +13,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One);
 
+
 // Font familes
+@mixin font($type) {
+  @if ($type == title) {
+    font-family: "Rammetto One";
+  
+  } @elseif ($type == subtitle) {
+    font-family: 'Wire One';
+  }
+}
