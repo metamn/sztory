@@ -13,6 +13,21 @@
       @include font(title);
       font-size: $heading-level-1;
       display: inline-block;
+      
+      span {;
+        display: block;
+        
+        &:first-of-type {
+          margin-left: 3px;
+        }
+        
+        &:last-of-type {
+          &:before {
+            content: '\2014';
+            color: red;
+          }
+        }
+      }
     }
   }
 }
