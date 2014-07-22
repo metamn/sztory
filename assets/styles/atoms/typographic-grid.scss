@@ -3,6 +3,7 @@
 
 $breakpoint-mobile: 30em; // 480px
 $breakpoint-tablet: 48em; // 768px
+$breakpoint-normal-screen: 80em; // 1024px
 $breakpoint-large-screen: 90em; // 1440px
 
 
@@ -14,6 +15,12 @@ $breakpoint-large-screen: 90em; // 1440px
 
 @mixin below-tablet {
   @media only screen and (max-width: $breakpoint-tablet - 0.001) {
+    @content
+  }
+}
+
+@mixin normal-screen {
+  @media only screen and (min-width: $breakpoint-tablet + 001) and (max-width: $breakpoint-large-screen) {
     @content
   }
 }
