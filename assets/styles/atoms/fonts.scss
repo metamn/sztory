@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Old+Standard+TT:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Old+Standard+TT:400,400italic,700);
 
 // Font familes
 $serif: 'Old Standard TT', serif;
@@ -28,6 +28,7 @@ $heading-level-3: 4.2308em;
 @mixin font-title {
   font-family: $serif;
   font-style: italic;
+  font-weight: 700;
 }
 
 @mixin font-body {
