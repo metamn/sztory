@@ -21,6 +21,9 @@ html body { font-size: 100%; line-height: 1.25; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 
+/* Center vertically or horizontally
+- http://davidwalsh.name/css-vertical-center
+*/
 section h3, nav h3 { display: none; }
 
 html body { font-size: 100%; line-height: 1.25; }
@@ -29,14 +32,11 @@ html body { font-size: 100%; line-height: 1.25; }
 
 html, body, .container, .container section { height: 100%; position: relative; }
 
-html body header { position: absolute; z-index: 1; top: 6.25em; left: 6.45833em; height: 12.5em; max-width: 19.375em; }
-html body header #logo { width: 10em; height: 10em; -webkit-border-radius: 10em; -moz-border-radius: 10em; -ms-border-radius: 10em; -o-border-radius: 10em; border-radius: 10em; color: #999999; background: #66493d; }
-html body header #logo span { display: inline-block; margin-top: calc(5em - 0.625em); }
+html body header { font-family: "Old Standard TT", serif; font-style: italic; }
+html body header #logo { width: 7.5em; height: 7.5em; -webkit-border-radius: 7.5em; -moz-border-radius: 7.5em; -ms-border-radius: 7.5em; -o-border-radius: 7.5em; border-radius: 7.5em; border: 1px solid black; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); text-align: center; position: fixed; margin: 1.25em 0; }
+html body header #logo span { margin-top: calc(3.75em - 0.625em); }
 html body header #logo span:nth-of-type(1) { float: left; margin-left: 0.625em; }
-html body header #logo span:nth-of-type(1):after { content: ''; display: inline-block; border-bottom: 1px solid; width: calc(10em - 2.5em); position: relative; top: -0.3125em; left: 0.15625em; }
 html body header #logo span:nth-of-type(2) { float: right; margin-right: 0.625em; }
-html body header h1 { font-family: "Old Standard TT", serif; font-style: italic; }
-html body header h1 a, html body header h1 a:visited { color: #66493d; background: transparent; text-decoration: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
@@ -54,7 +54,4 @@ html body header h1 a, html body header h1 a:visited { color: #66493d; backgroun
 
 #grid .gutter-bottom { float: left; border-bottom: 1px solid; height: calc(1.25em - 1px); width: 100%; }
 
-#grid { z-index: 100; }
-#grid .col { color: #fff; }
-
-#grid, #gravity { display: none; }
+#gravity { display: none; }

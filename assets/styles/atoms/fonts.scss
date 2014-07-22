@@ -15,28 +15,22 @@ $heading-level-3: 4.2308em;
 
 // Mixins
 @mixin font($type: body) {
-  @if ($type == strapline) {
-    @include font-strapline;
+  @if ($type == body) {
+    @include font-body;
   
-  } @elseif ($type == menu) {
-    @include font-menu;
+  } @elseif ($type == title) {
+    @include font-title;
   
-  } @elseif ($type == csongor) {
-    @include font-csongor;
   } 
 }
 
 
-@mixin font-csongor {
+@mixin font-title {
   font-family: $serif;
   font-style: italic;
 }
 
-@mixin font-menu {
-  font-family: $sans-serif;
-}
-
-@mixin font-strapline {
+@mixin font-body {
   font-family: $sans-serif;
   font-weight: 300;
   font-size: $heading-level-2;

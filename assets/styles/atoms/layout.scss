@@ -1,3 +1,28 @@
+/* Center vertically or horizontally
+- http://davidwalsh.name/css-vertical-center
+*/
+@mixin center($direction: both) {
+  @if ($direction == vertical) {
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  
+  @if ($direction == horizontal) {
+    left: 50%;
+    @include transform(translateX(-50%));
+    text-align: center;
+  }
+  
+  @if ($direction == both) {
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    text-align: center;
+  }
+}
+
+
+
 
 @mixin full-screen {
   html, body, .container, .container section {
@@ -5,9 +30,6 @@
     position: relative;
   }
 }
-
-
-// General mixins
 
 
 @mixin list-inline($margin: $gutter) {
@@ -22,9 +44,11 @@
   }
 }
 
+
 section h3, nav h3 {
   display: none;
 }
+
 
 @mixin block {
   width: 100%;

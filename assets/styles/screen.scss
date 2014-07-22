@@ -15,11 +15,5 @@
 
 @import "visual-grid";
 
-#grid {
-  z-index: 100;
-  
-  .col {
-    color: #fff;
-  }
-}
-#grid, #gravity { display: none; }
+
+#gravity { display: none; }
