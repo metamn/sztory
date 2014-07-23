@@ -1,0 +1,5 @@
+@mixin circle($radius) {
+  width: $radius;
+  height: $radius;
+  @include border-radius($radius);
+}
