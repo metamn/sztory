@@ -2,6 +2,9 @@
   @include block;
   overflow: hidden;
   
+  background: #fff;
+  color: #000;
+  
   article {
     @include block;
     @include title-position;
@@ -13,6 +16,14 @@
       span {
         @include font(subtitle);
         display: block;
+      }
+    }
+    
+    aside {
+      figure {
+        figcaption {
+          display: none;
+        }
       }
     }
   }
@@ -40,8 +51,7 @@
     top: row(-1);
     
     @include below-tablet {
-      top: -$gutter * 6;
-      left: -$gutter * 4;
+      top: 0;
     }
     
     @include normal-screen {
