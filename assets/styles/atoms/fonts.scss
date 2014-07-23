@@ -11,7 +11,7 @@
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One);
+@import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One|Lato:300);
 
 
 // Font familes
@@ -21,5 +21,8 @@
   
   } @elseif ($type == subtitle) {
     font-family: 'Wire One';
+  
+  } @elseif ($type == body) {
+    font-family: 'Lato';
   }
 }

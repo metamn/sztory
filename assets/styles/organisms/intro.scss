@@ -1,0 +1,36 @@
+@mixin intro {
+  @include block;
+  @include color($background, $color);  
+  
+  article {
+    margin: $gutter;
+    
+    // same left margins as the pre section
+    margin-left: col(1);
+    @include below-tablet {
+      margin-left: col(.5);
+    }
+    
+    
+    h1 {
+      @include h1;
+      @include font(subtitle);
+      
+      span {
+        color: $highlight;
+      }
+    }
+    
+    aside {
+      margin: $gutter 0;
+      
+      @include font(body);
+      font-size: larger;
+      line-height: 1.75;
+      
+      span {
+        color: $highlight;
+      }
+    }
+  }
+}

@@ -16,4 +16,12 @@
 @import "visual-grid";
 
 
+#grid {
+  z-index: 1000;
+  
+  .col {
+    color: white;
+  }
+}
+
 #grid, #gravity { display: none; }

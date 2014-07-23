@@ -1,9 +1,9 @@
 @mixin title {
   @include block;
-  overflow: hidden;
+  @include title-height;
+  @include color;
   
-  background: #fff;
-  color: #000;
+  overflow: hidden;
   
   article {
     @include block;
@@ -30,11 +30,17 @@
 }
 
 
+@mixin title-height {
+  padding-bottom: row(2);
+}
+
+
 
 @mixin title-position {
   margin-top: row(2);
-  margin-left: col(1);
   
+  // this margin is re-used in the next section
+  margin-left: col(1);
   @include below-tablet {
     margin-left: col(.5);
   }
@@ -47,7 +53,7 @@
   }
   
   aside {
-    position: relative;
+    position: absolute;
     top: row(-1);
     
     @include below-tablet {
