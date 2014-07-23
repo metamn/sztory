@@ -1,6 +1,7 @@
 @mixin title {
   @include block;
   overflow: hidden;
+  @include title-height;
   
   background: #fff;
   color: #000;
@@ -30,6 +31,11 @@
 }
 
 
+@mixin title-height {
+  padding-bottom: row(2);
+}
+
+
 
 @mixin title-position {
   margin-top: row(2);
@@ -47,7 +53,7 @@
   }
   
   aside {
-    position: relative;
+    position: absolute;
     top: row(-1);
     
     @include below-tablet {

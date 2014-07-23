@@ -1,9 +1,13 @@
-@include full-screen;
+//@include full-screen;
 
 html {
   body {
     #title {
       @include title;
+    }
+    
+    #intro {
+      @include intro;
     }
   }
 }

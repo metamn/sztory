@@ -1,0 +1,6 @@
+@mixin intro {
+  @include block;
+  
+  background: #000;
+  color: #fff;  
+}
