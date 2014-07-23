@@ -58,6 +58,12 @@ html body #intro article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
 html body #intro article h1 span { color: #98bddc; }
 html body #intro article aside { margin: 1.25em 0; font-family: 'Lato'; font-size: larger; line-height: 1.75; }
 html body #intro article aside span { color: #98bddc; }
+html body #journey { width: 100%; float: left; }
+html body #journey article { margin-left: 6.45833em; max-width: 31.25em; margin-top: 6.25em; margin-bottom: 6.25em; }
+@media only screen and (max-width: 47.999em) { html body #journey article { margin-left: 3.22917em; } }
+html body #journey article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
+@media only screen and (max-width: 47.999em) { html body #journey article h1 { font-size: 2.6154em; } }
+@media only screen and (min-width: 90.001em) { html body #journey article h1 { font-size: 6.8462em; } }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

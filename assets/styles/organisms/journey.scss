@@ -1,0 +1,21 @@
+@mixin journey {
+  @include block; 
+  
+  article {
+    // same left margins as the pre section
+    margin-left: col(1);
+    @include below-tablet {
+      margin-left: col(.5);
+    }
+    
+    
+    max-width: $text-width;
+    margin-top: row(1);
+    margin-bottom: row(1);
+    
+    h1 {
+      @include h1;
+      @include font(subtitle);
+    }
+  }
+}

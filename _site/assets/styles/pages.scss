@@ -9,5 +9,9 @@ html {
     #intro {
       @include intro;
     }
+    
+    #journey {
+      @include journey;
+    }
   }
 }
