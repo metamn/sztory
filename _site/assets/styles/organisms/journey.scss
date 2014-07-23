@@ -1,13 +1,22 @@
 @mixin journey {
   @include block; 
   
+  position: relative;
+  
+  canvas {
+    @include block;
+    max-height: row(9);
+  }
+  
   article {
     // same left margins as the pre section
-    margin-left: col(1);
-    @include below-tablet {
-      margin-left: col(.5);
-    }
+    position: absolute;
+    z-index: 1;
     
+    left: col(1);
+    @include below-tablet {
+      left: col(.5);
+    }
     
     max-width: $text-width;
     margin-top: row(1);

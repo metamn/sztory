@@ -58,9 +58,10 @@ html body #intro article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
 html body #intro article h1 span { color: #98bddc; }
 html body #intro article aside { margin: 1.25em 0; font-family: 'Lato'; font-size: larger; line-height: 1.75; }
 html body #intro article aside span { color: #98bddc; }
-html body #journey { width: 100%; float: left; }
-html body #journey article { margin-left: 6.45833em; max-width: 31.25em; margin-top: 6.25em; margin-bottom: 6.25em; }
-@media only screen and (max-width: 47.999em) { html body #journey article { margin-left: 3.22917em; } }
+html body #journey { width: 100%; float: left; position: relative; }
+html body #journey canvas { width: 100%; float: left; max-height: 56.25em; }
+html body #journey article { position: absolute; z-index: 1; left: 6.45833em; max-width: 31.25em; margin-top: 6.25em; margin-bottom: 6.25em; }
+@media only screen and (max-width: 47.999em) { html body #journey article { left: 3.22917em; } }
 html body #journey article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
 @media only screen and (max-width: 47.999em) { html body #journey article h1 { font-size: 2.6154em; } }
 @media only screen and (min-width: 90.001em) { html body #journey article h1 { font-size: 6.8462em; } }
