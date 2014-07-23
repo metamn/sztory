@@ -1,8 +1,8 @@
-$color: #000;
-$background: #999;
-$highlight: #66493D;
-$product: #263326;
-$dark-grey: #4c4c4c;
+$background: #fff;
+$color: #404040;
+
+// from the mandala
+$highlight: #DA451A;
 
 
 @mixin color($fore: $color, $back: $background) {
