@@ -38,7 +38,7 @@ html body { font-size: 100%; line-height: 1.25; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 
-html body #title { width: 100%; float: left; padding-bottom: 12.5em; color: #404040; background: white; overflow: hidden; }
+html body #title { width: 100%; float: left; padding-bottom: 12.5em; color: #222222; background: white; overflow: hidden; }
 html body #title article { width: 100%; float: left; margin-top: 12.5em; margin-left: 6.45833em; position: relative; }
 @media only screen and (max-width: 47.999em) { html body #title article { margin-left: 3.22917em; } }
 html body #title article h1 { position: relative; z-index: 1; }
@@ -49,15 +49,15 @@ html body #title article aside { position: absolute; top: -6.25em; }
 html body #title article h1 { font-family: "Rammetto One"; font-size: 1.6154em; }
 html body #title article h1 span { font-family: 'Wire One'; display: block; }
 html body #title article aside figure figcaption { display: none; }
-html body #intro { width: 100%; float: left; color: white; background: #404040; }
-html body #intro article { margin-left: 6.45833em; }
+html body #intro { width: 100%; float: left; color: white; background: #222222; }
+html body #intro article { margin: 1.25em; margin-left: 6.45833em; }
 @media only screen and (max-width: 47.999em) { html body #intro article { margin-left: 3.22917em; } }
 html body #intro article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
 @media only screen and (max-width: 47.999em) { html body #intro article h1 { font-size: 2.6154em; } }
 @media only screen and (min-width: 90.001em) { html body #intro article h1 { font-size: 6.8462em; } }
-html body #intro article h1 span { color: #da451a; }
+html body #intro article h1 span { color: #98bddc; }
 html body #intro article aside { margin: 1.25em 0; font-family: 'Lato'; font-size: larger; line-height: 1.75; }
-html body #intro article aside span { color: #404040; background: #da451a; padding: 0.15625em 0.3125em; -webkit-border-radius: 0.3125em 0; -moz-border-radius: 0.3125em 0; -ms-border-radius: 0.3125em 0; -o-border-radius: 0.3125em 0; border-radius: 0.3125em 0; }
+html body #intro article aside span { color: #98bddc; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

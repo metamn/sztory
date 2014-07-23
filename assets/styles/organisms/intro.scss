@@ -3,7 +3,9 @@
   @include color($background, $color);  
   
   article {
-    // same margins as the pre section
+    margin: $gutter;
+    
+    // same left margins as the pre section
     margin-left: col(1);
     @include below-tablet {
       margin-left: col(.5);
@@ -27,9 +29,7 @@
       line-height: 1.75;
       
       span {
-        @include color($color, $highlight);
-        padding: $gutter/8 $gutter/4;
-        @include border-radius($gutter/4 0);
+        color: $highlight;
       }
     }
   }
