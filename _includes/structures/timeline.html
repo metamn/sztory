@@ -2,8 +2,41 @@
   <h3>Timeline</h3>
   
   {% assign posts = site.posts | sort: 'year' %}
-
-  {% for post in posts reversed %}
+  {% for post in posts %}
     {% include organisms/timeline.html %}
   {% endfor %}
+  
+  <hr>
+  
+  {% assign groups = site.posts | group_by: 'technology' %}
+  {% assign order = "HTML,UX,CSS,Flash" | split: ',' %}
+  
+  {% for o in order %}
+    {% for group in groups %}
+      {% if group.name == o %}
+        <h2>{{ group.name }}</h2>
+        {% for post in group.items reversed %}
+          {% include organisms/timeline.html %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  
+  
+  <hr>
+  
+  {% assign groups = site.posts | group_by: 'cont' %}
+  {% assign order = "Structure,Usability,Basic styling,Animation,Graphics" | split: ',' %}
+  
+  {% for o in order %}
+    {% for group in groups %}
+      {% if group.name == o %}
+        <h2>{{ group.name }}</h2>
+        {% for post in group.items reversed %}
+          {% include organisms/timeline.html %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  
 </section>
