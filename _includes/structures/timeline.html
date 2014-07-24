@@ -1,7 +1,9 @@
 <section id="timeline">
   <h3>Timeline</h3>
+  
+  {% assign posts = site.posts | sort: 'year' %}
 
-  {% for post in site.posts %}
+  {% for post in posts reversed %}
     {% include organisms/timeline.html %}
   {% endfor %}
 </section>
