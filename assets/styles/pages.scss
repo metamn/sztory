@@ -13,5 +13,9 @@ html {
     #journey {
       @include journey;
     }
+    
+    #timeline {
+      @include timeline;
+    }
   }
 }
