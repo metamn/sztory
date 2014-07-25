@@ -1,0 +1,10 @@
+<section id="timeline">
+  <h3>Timeline</h3>
+  
+  <div id="timeline-border"></div>
+  
+  {% for post in site.posts reversed %}
+    {% include organisms/timeline.html %}
+  {% endfor %}
+  
+</section>

@@ -1,0 +1,13 @@
+<section id="people">
+  <h3>People</h3>
+  
+  
+  <ul>
+  {% for post in site.posts reversed %}
+    {% for person in post.people %}
+      <li>{{ person.name }}</li>
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  
+</section>

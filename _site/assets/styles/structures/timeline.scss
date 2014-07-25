@@ -1,0 +1,51 @@
+@mixin timeline {
+  @include block;
+  
+  position: relative;
+  z-index: 1;
+  
+  #timeline-border {
+    height: 100%;
+    border-left: $gutter/4 solid;
+
+    position: absolute;
+    left: $gutter * 2 + $gutter/8;
+    z-index: 1;
+  }
+  
+  article {
+    @include block;
+    margin: $gutter 0;
+    position: relative;
+    z-index: 2;
+    
+    .date, h1, aside {
+      float: left;
+    }
+    
+    .date {
+      width: calc(#{col(1)} - #{$gutter});
+      padding: $gutter/2;
+      
+      time {
+        @include date($gutter*3);
+      }
+    }
+    
+    h1, aside {
+      width: calc(100% - #{col(1)} - #{$gutter * 2});
+      padding: $gutter*2 - $gutter/4 $gutter 0;
+    }
+
+    aside {
+      margin-left: col(1);
+      display: none;
+    }
+
+    &.active {
+      aside {
+        display: block;
+      }
+    }
+  }
+}

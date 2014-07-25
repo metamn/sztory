@@ -1,0 +1,18 @@
+<section id="technology">
+  <h3>Technology</h3>
+  
+  {% assign groups = site.posts | group_by: 'technology' %}
+  {% assign order = "HTML,UX,CSS,Flash,Photoshop,CMS,Blog,Social,Theming" | split: ',' %}
+  
+  {% for o in order %}
+    {% for group in groups %}
+      {% if group.name == o %}
+        <h2>{{ group.name }}</h2>
+        {% for post in group.items reversed %}
+          {% include organisms/timeline.html %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+ 
+</section>
