@@ -6,10 +6,12 @@
     {% include organisms/timeline.html %}
   {% endfor %}
   
+  <br>
   <hr>
+  <br>
   
   {% assign groups = site.posts | group_by: 'technology' %}
-  {% assign order = "HTML,UX,CSS,Flash" | split: ',' %}
+  {% assign order = "HTML,UX,CSS,Flash,Photoshop,CMS,Blog,Social,Theming" | split: ',' %}
   
   {% for o in order %}
     {% for group in groups %}
@@ -22,11 +24,12 @@
     {% endfor %}
   {% endfor %}
   
-  
+  <br>
   <hr>
+  <br>
   
   {% assign groups = site.posts | group_by: 'cont' %}
-  {% assign order = "Structure,Usability,Basic styling,Animation,Graphics" | split: ',' %}
+  {% assign order = "Structure,Usability,Basic styling,Animation,Graphics,Management,Self Publicihing,Streaming,Presentation" | split: ',' %}
   
   {% for o in order %}
     {% for group in groups %}
@@ -38,5 +41,6 @@
       {% endif %}
     {% endfor %}
   {% endfor %}
+
   
 </section>
