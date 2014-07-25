@@ -1,0 +1,20 @@
+@mixin date($size: $gutter*4) {
+  display: block;
+  @include circle($size);
+  @include border;
+  
+  span {
+    position: relative;
+    top: $gutter;
+    left: $gutter/2;
+  }
+  
+  // The year is shown only once when there are multiple entries under
+  // - this is managed by jQuery
+  visibility: hidden;
+  &.visible {
+    visibility: visible;
+    background: $background;
+  }
+  
+}

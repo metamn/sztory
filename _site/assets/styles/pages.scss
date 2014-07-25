@@ -2,24 +2,26 @@
 
 html {
   body {
-    #title {
-      @include title;
-    }
-    
-    #intro {
-      @include intro;
-    }
-    
-    #journey {
-      @include journey;
-    }
-    
-    #timeline {
-      @include timeline;
-    }
-    
-    #technology, #content, #people {
-      display: none;
+    .container {
+      #title {
+        @include title;
+      }
+
+      #intro {
+        @include intro;
+      }
+
+      #journey {
+        @include journey;
+      }
+
+      #timeline {
+        @include timeline;
+      }
+
+      #technology, #content, #people {
+        display: none;
+      }
     }
   }
 }
