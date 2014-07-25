@@ -1,3 +1,12 @@
+
+
 <article>
+  {% include atoms/date.html %}
+  
   <h1>{{ post.title }}</h1>
+  
+  <aside>
+    <h3>Content</h3>
+    {{ post.content }}
+  </aside>
 </article>

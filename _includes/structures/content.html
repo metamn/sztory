@@ -1,0 +1,19 @@
+<section id="content">
+  <h3>Content</h3>
+  
+  
+  {% assign groups = site.posts | group_by: 'cont' %}
+  {% assign order = "Structure,Usability,Basic styling,Animation,Graphics,Management,Self Publicihing,Streaming,Presentation" | split: ',' %}
+  
+  {% for o in order %}
+    {% for group in groups %}
+      {% if group.name == o %}
+        <h2>{{ group.name }}</h2>
+        {% for post in group.items reversed %}
+          {% include organisms/timeline.html %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+</section>

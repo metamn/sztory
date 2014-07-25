@@ -17,5 +17,9 @@ html {
     #timeline {
       @include timeline;
     }
+    
+    #technology, #content, #people {
+      display: none;
+    }
   }
 }

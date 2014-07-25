@@ -1,3 +1,41 @@
 @mixin timeline {
+  @include block;
   
+  article {
+    @include block;
+    
+    time, h1, aside {
+      float: left;
+    }
+    
+    time {
+      width: calc(#{col(1)} - #{$gutter});
+      padding: $gutter/2;
+      
+      // The year is shown only once when there are multiple entries under
+      // - this is managed by jQuery
+      visibility: hidden;
+      &.visible {
+        visibility: visible;
+      }
+    }
+    
+    h1, aside {
+      width: calc(100% - #{col(1)} - #{$gutter + $gutter/2});
+      padding: $gutter/2;
+      padding-left: $gutter;
+    }
+
+    aside {
+      margin-left: col(1);
+      
+      display: none;
+    }
+
+    &.active {
+      aside {
+        display: block;
+      }
+    }
+  }
 }

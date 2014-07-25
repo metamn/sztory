@@ -65,6 +65,15 @@ html body #journey article { position: absolute; z-index: 1; left: 6.45833em; ma
 html body #journey article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
 @media only screen and (max-width: 47.999em) { html body #journey article h1 { font-size: 2.6154em; } }
 @media only screen and (min-width: 90.001em) { html body #journey article h1 { font-size: 6.8462em; } }
+html body #timeline { width: 100%; float: left; }
+html body #timeline article { width: 100%; float: left; }
+html body #timeline article time, html body #timeline article h1, html body #timeline article aside { float: left; }
+html body #timeline article time { width: calc(6.45833em - 1.25em); padding: 0.625em; visibility: hidden; }
+html body #timeline article time.visible { visibility: visible; }
+html body #timeline article h1, html body #timeline article aside { width: calc(100% - 6.45833em - 1.875em); padding: 0.625em; padding-left: 1.25em; }
+html body #timeline article aside { margin-left: 6.45833em; display: none; }
+html body #timeline article.active aside { display: block; }
+html body #technology, html body #content, html body #people { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
