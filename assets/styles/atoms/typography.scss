@@ -31,3 +31,15 @@ $heading-level-4: 6.8462em;
     font-size: $heading-level-3;  
   }
 }
+
+
+
+// Common elements
+
+@mixin p {
+  p {
+    + p {
+      margin-top: $gutter;
+    }
+  }
+}
