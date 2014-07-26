@@ -43,7 +43,15 @@
 
     aside {
       @include font(body);
-      @include typographic-elements;
+      
+      .excerpt {
+        @include typographic-elements;
+      }
+      
+      .iframe {
+        margin: $gutter 0;
+        @include iframe($text-width*2, $text-width*2);
+      }
     }
 
     display: none;

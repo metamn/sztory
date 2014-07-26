@@ -75,8 +75,12 @@ html body .container #timeline article .date time span { position: relative; top
 html body .container #timeline article .date time.visible { visibility: visible; background: white; }
 html body .container #timeline article h1, html body .container #timeline article aside { width: calc(100% - 6.45833em - 2.5em); padding: 2.1875em 1.25em 0; }
 html body .container #timeline article h1 { font-family: "Rammetto One"; }
-html body .container #timeline article aside { font-family: 'Lato'; max-width: 31.25em; }
-html body .container #timeline article aside p + p { margin-top: 1.25em; }
+html body .container #timeline article aside { font-family: 'Lato'; }
+html body .container #timeline article aside .excerpt { max-width: 31.25em; }
+html body .container #timeline article aside .excerpt p + p { margin-top: 1.25em; }
+html body .container #timeline article aside .iframe { margin: 1.25em 0; width: 100%; float: left; position: relative; overflow: hidden; width: 62.5em; height: 62.5em; }
+@media only screen and (max-width: 47.999em) { html body .container #timeline article aside .iframe { width: 31.25em; height: 31.25em; } }
+html body .container #timeline article aside .iframe iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 html body .container #timeline article.active { display: block; }
 html body .container #technology, html body .container #content, html body .container #people { display: none; }
 
