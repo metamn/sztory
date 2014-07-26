@@ -83,7 +83,7 @@ html body .container #timeline article.timeline aside article.first-website .ifr
 @media only screen and (max-width: 47.999em) { html body .container #timeline article.timeline aside article.first-website .iframe { width: 31.25em; height: 31.25em; } }
 html body .container #timeline article.timeline aside article.first-website .iframe iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 html body .container #timeline article.timeline aside article.image { margin: 1.25em 0; }
-html body .container #timeline article.timeline aside article.profile figure img { max-width: 100%; }
+html body .container #timeline article.timeline aside article.image figure img { max-width: 100%; }
 html body .container #timeline article.timeline.active { display: block; }
 html body .container #technology, html body .container #content, html body .container #people { display: none; }
 

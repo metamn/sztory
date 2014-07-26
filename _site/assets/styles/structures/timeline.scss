@@ -59,9 +59,7 @@
         
         &.image {
           margin: $gutter 0;
-        }
-        
-        &.profile {
+          
           figure {
             @include figure;
           }
