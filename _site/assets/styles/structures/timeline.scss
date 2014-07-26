@@ -13,7 +13,7 @@
     z-index: 1;
   }
   
-  article {
+  article.timeline {
     @include block;
     margin: $gutter 0;
     position: relative;
@@ -37,15 +37,39 @@
       padding: $gutter*2 - $gutter/4 $gutter 0;
     }
 
+    h1 {
+      @include font(title);
+    } 
+
     aside {
-      margin-left: col(1);
-      display: none;
+      @include font(body);
+      
+      article {
+        @include block;
+        
+        &.text {
+          @include typographic-elements;
+        }
+
+        &.first-website {
+          .iframe {
+            @include iframe($text-width*2, $text-width*2);
+          }
+        }
+        
+        &.image {
+          margin: $gutter 0;
+          
+          figure {
+            @include figure;
+          }
+        }
+      }
     }
 
+    display: none;
     &.active {
-      aside {
-        display: block;
-      }
+      display: block;
     }
   }
 }

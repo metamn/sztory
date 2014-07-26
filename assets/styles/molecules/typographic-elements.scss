@@ -1,0 +1,5 @@
+@mixin typographic-elements {
+  max-width: $text-width;
+  
+  @include p;
+}

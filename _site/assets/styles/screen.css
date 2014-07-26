@@ -67,15 +67,24 @@ html body .container #journey article h1 { font-size: 4.2308em; font-family: 'Wi
 @media only screen and (min-width: 90.001em) { html body .container #journey article h1 { font-size: 6.8462em; } }
 html body .container #timeline { width: 100%; float: left; position: relative; z-index: 1; }
 html body .container #timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.65625em; z-index: 1; }
-html body .container #timeline article { width: 100%; float: left; margin: 1.25em 0; position: relative; z-index: 2; }
-html body .container #timeline article .date, html body .container #timeline article h1, html body .container #timeline article aside { float: left; }
-html body .container #timeline article .date { width: calc(6.45833em - 1.25em); padding: 0.625em; }
-html body .container #timeline article .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #222222; visibility: hidden; }
-html body .container #timeline article .date time span { position: relative; top: 1.25em; left: 0.625em; }
-html body .container #timeline article .date time.visible { visibility: visible; background: white; }
-html body .container #timeline article h1, html body .container #timeline article aside { width: calc(100% - 6.45833em - 2.5em); padding: 2.1875em 1.25em 0; }
-html body .container #timeline article aside { margin-left: 6.45833em; display: none; }
-html body .container #timeline article.active aside { display: block; }
+html body .container #timeline article.timeline { width: 100%; float: left; margin: 1.25em 0; position: relative; z-index: 2; display: none; }
+html body .container #timeline article.timeline .date, html body .container #timeline article.timeline h1, html body .container #timeline article.timeline aside { float: left; }
+html body .container #timeline article.timeline .date { width: calc(6.45833em - 1.25em); padding: 0.625em; }
+html body .container #timeline article.timeline .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #222222; visibility: hidden; }
+html body .container #timeline article.timeline .date time span { position: relative; top: 1.25em; left: 0.625em; }
+html body .container #timeline article.timeline .date time.visible { visibility: visible; background: white; }
+html body .container #timeline article.timeline h1, html body .container #timeline article.timeline aside { width: calc(100% - 6.45833em - 2.5em); padding: 2.1875em 1.25em 0; }
+html body .container #timeline article.timeline h1 { font-family: "Rammetto One"; }
+html body .container #timeline article.timeline aside { font-family: 'Lato'; }
+html body .container #timeline article.timeline aside article { width: 100%; float: left; }
+html body .container #timeline article.timeline aside article.text { max-width: 31.25em; }
+html body .container #timeline article.timeline aside article.text p + p { margin-top: 1.25em; }
+html body .container #timeline article.timeline aside article.first-website .iframe { width: 100%; float: left; position: relative; overflow: hidden; width: 62.5em; height: 62.5em; max-width: 100%; }
+@media only screen and (max-width: 47.999em) { html body .container #timeline article.timeline aside article.first-website .iframe { width: 31.25em; height: 31.25em; } }
+html body .container #timeline article.timeline aside article.first-website .iframe iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+html body .container #timeline article.timeline aside article.image { margin: 1.25em 0; }
+html body .container #timeline article.timeline aside article.image figure img { max-width: 100%; }
+html body .container #timeline article.timeline.active { display: block; }
 html body .container #technology, html body .container #content, html body .container #people { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

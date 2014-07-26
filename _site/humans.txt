@@ -1,6 +1,6 @@
 
 /* TEAM */
-Designer & Developer: Csongor Bartus
+Designer, Developer and Storyteller: Csongor Bartus
 Site: http://its-csongor.com
 Twitter: @metamn
 Location: Budapest, Hungary
@@ -10,15 +10,16 @@ Location: Budapest, Hungary
 /* THANKS */
 DNA Mandalas on the first page: Jer Thorp, https://www.flickr.com/photos/blprnt/4498402938/in/photostream/
 Canvas Fireworks: The Codeplayer, http://thecodeplayer.com/walkthrough/canvas-fireworks-tutorial
-
+"ViolaWWW" by http://www.xcf.berkeley.edu/~wei/viola/book/chp1.html. Licensed under Fair use of copyrighted material in the context of ViolaWWW via Wikipedia - http://en.wikipedia.org/wiki/File:ViolaWWW.png#mediaviewer/File:ViolaWWW.png
+Tim Berners-Lee photo by Paul Clarke [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons
 
 
 
 /* SITE */
 Last update: YYYY/MM/DD
-Standards: HTML5, CSS3,..
-Components: Modernizr, jQuery, etc.
-Software: Software used for the development
+Standards: HTML5, CSS3
+Components: SASS, Compass, jQuery
+Software: Jekyll (http://jekyllrb.com/), Adobe Brackets (http://brackets.io/), Write Good (https://github.com/btford/write-good)
 
 
                     
