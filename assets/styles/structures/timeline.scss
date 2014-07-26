@@ -47,16 +47,18 @@
       article {
         @include block;
         
-        &.excerpt {
+        &.text {
           @include typographic-elements;
         }
 
         &.first-website {
           .iframe {
-            @include block;
-            margin: $gutter 0;
             @include iframe($text-width*2, $text-width*2);
           }
+        }
+        
+        &.image {
+          margin: $gutter 0;
         }
       }
     }
