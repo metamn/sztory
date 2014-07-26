@@ -79,10 +79,11 @@ html body .container #timeline article.timeline aside { font-family: 'Lato'; }
 html body .container #timeline article.timeline aside article { width: 100%; float: left; }
 html body .container #timeline article.timeline aside article.text { max-width: 31.25em; }
 html body .container #timeline article.timeline aside article.text p + p { margin-top: 1.25em; }
-html body .container #timeline article.timeline aside article.first-website .iframe { width: 100%; float: left; position: relative; overflow: hidden; width: 62.5em; height: 62.5em; }
+html body .container #timeline article.timeline aside article.first-website .iframe { width: 100%; float: left; position: relative; overflow: hidden; width: 62.5em; height: 62.5em; max-width: 100%; }
 @media only screen and (max-width: 47.999em) { html body .container #timeline article.timeline aside article.first-website .iframe { width: 31.25em; height: 31.25em; } }
 html body .container #timeline article.timeline aside article.first-website .iframe iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 html body .container #timeline article.timeline aside article.image { margin: 1.25em 0; }
+html body .container #timeline article.timeline aside article.profile figure img { max-width: 100%; }
 html body .container #timeline article.timeline.active { display: block; }
 html body .container #technology, html body .container #content, html body .container #people { display: none; }
 

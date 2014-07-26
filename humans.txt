@@ -11,6 +11,7 @@ Location: Budapest, Hungary
 DNA Mandalas on the first page: Jer Thorp, https://www.flickr.com/photos/blprnt/4498402938/in/photostream/
 Canvas Fireworks: The Codeplayer, http://thecodeplayer.com/walkthrough/canvas-fireworks-tutorial
 "ViolaWWW" by http://www.xcf.berkeley.edu/~wei/viola/book/chp1.html. Licensed under Fair use of copyrighted material in the context of ViolaWWW via Wikipedia - http://en.wikipedia.org/wiki/File:ViolaWWW.png#mediaviewer/File:ViolaWWW.png
+Tim Berners-Lee photo by Paul Clarke [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons
 
 
 
@@ -18,7 +19,7 @@ Canvas Fireworks: The Codeplayer, http://thecodeplayer.com/walkthrough/canvas-fi
 Last update: YYYY/MM/DD
 Standards: HTML5, CSS3
 Components: SASS, Compass, jQuery
-Software: Jekyll (http://jekyllrb.com/), Adobe Brackets (http://brackets.io/)
+Software: Jekyll (http://jekyllrb.com/), Adobe Brackets (http://brackets.io/), Write Good (https://github.com/btford/write-good)
 
 
                     

@@ -5,6 +5,7 @@
   
   width: $width;
   height: $height;
+  max-width: 100%;
   
   @include below-tablet {
     width: $text-width;
