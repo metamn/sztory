@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html body { font-size: 100%; line-height: 1.5; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.75; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
 /*
 
@@ -36,7 +36,7 @@ section h3, nav h3 { display: none; }
 
 html body { font-size: 100%; line-height: 1.5; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.75; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
 html body .container #title { width: 100%; float: left; padding-bottom: 12.5em; color: #222222; background: white; overflow: hidden; }
 html body .container #title article { width: 100%; float: left; margin-top: 12.5em; margin-left: 6.45833em; position: relative; }
