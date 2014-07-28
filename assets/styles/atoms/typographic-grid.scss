@@ -47,7 +47,9 @@ $large-font-size: 125%;
 // The basic line height
 // - this is 125% of the $font-size
 // - see more http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
-$line-height: 1.25;
+$small-line-height: 1.25;
+$line-height: 1.5;
+$large-line-height: 1.75;
 
 // The basic line height in EM
 // - it's derived from the $line-height property
@@ -61,11 +63,13 @@ $gutter: 1.25em;
   line-height: $line-height;
     
   @include below-tablet {
-    font-size: $small-font-size;  
+    font-size: $small-font-size; 
+    line-height: $small-line-height;
   } 
   
   @include large-screen-and-up {
-    font-size: $large-font-size;  
+    font-size: $large-font-size;
+    line-height: $large-line-height;
   }
 }
 
