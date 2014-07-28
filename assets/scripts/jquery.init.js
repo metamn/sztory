@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   // Show the first article in the timeline
-  jQuery("#timeline article.timeline:nth-of-type(7)").addClass('active');
+  jQuery("#timeline article.timeline:nth-of-type(8)").addClass('active');
 
   // Hide duplicated years in the timeline
   for (var i=1989; i<2015; i++) {
