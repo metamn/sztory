@@ -17,9 +17,9 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-html body { font-size: 100%; line-height: 1.25; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
+html body { font-size: 100%; line-height: 1.5; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
 /*
 
@@ -34,9 +34,9 @@ html body { font-size: 100%; line-height: 1.25; }
 */
 section h3, nav h3 { display: none; }
 
-html body { font-size: 100%; line-height: 1.25; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
+html body { font-size: 100%; line-height: 1.5; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
 html body .container #title { width: 100%; float: left; padding-bottom: 12.5em; color: #222222; background: white; overflow: hidden; }
 html body .container #title article { width: 100%; float: left; margin-top: 12.5em; margin-left: 6.45833em; position: relative; }
@@ -76,7 +76,7 @@ html body .container #timeline article.timeline .date time.visible { visibility:
 html body .container #timeline article.timeline h1, html body .container #timeline article.timeline aside { width: calc(100% - 6.45833em - 2.5em); padding: 2.1875em 1.25em 0; }
 html body .container #timeline article.timeline h1 { font-family: "Rammetto One"; }
 html body .container #timeline article.timeline aside { font-family: 'Lato'; }
-html body .container #timeline article.timeline aside article { width: 100%; float: left; }
+html body .container #timeline article.timeline aside article { width: 100%; float: left; margin-right: 6.45833em; }
 html body .container #timeline article.timeline aside article.text { max-width: 31.25em; }
 html body .container #timeline article.timeline aside article.text p + p { margin-top: 1.25em; }
 html body .container #timeline article.timeline aside article.first-website .iframe { width: 100%; float: left; position: relative; overflow: hidden; width: 62.5em; height: 62.5em; max-width: 100%; }

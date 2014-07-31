@@ -46,6 +46,7 @@
       
       article {
         @include block;
+        margin-right: col(1);
         
         &.text {
           @include typographic-elements;
