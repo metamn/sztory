@@ -66,7 +66,7 @@ html body .container #journey article h1 { font-size: 4.2308em; font-family: 'Wi
 @media only screen and (max-width: 47.999em) { html body .container #journey article h1 { font-size: 2.6154em; } }
 @media only screen and (min-width: 90.001em) { html body .container #journey article h1 { font-size: 6.8462em; } }
 html body .container #timeline { width: 100%; float: left; position: relative; z-index: 1; }
-html body .container #timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.65625em; z-index: 1; }
+html body .container #timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.65625em; z-index: 1; display: none; }
 html body .container #timeline article.timeline { width: 100%; float: left; margin: 1.25em 0; position: relative; z-index: 2; display: none; }
 html body .container #timeline article.timeline .date, html body .container #timeline article.timeline h1, html body .container #timeline article.timeline aside { float: left; }
 html body .container #timeline article.timeline .date { width: calc(6.45833em - 1.25em); padding: 0.625em; }
