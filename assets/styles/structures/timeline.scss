@@ -11,6 +11,8 @@
     position: absolute;
     left: $gutter * 2 + $gutter/8;
     z-index: 1;
+    
+    display: none;
   }
   
   article.timeline {
