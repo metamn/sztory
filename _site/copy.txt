@@ -1,1 +1,17 @@
-Let's take a journey and celebrate the people who made this beauty happen.
+ At age 34 Timothy Berners-Lee—"TimBL" on the net—invents the world wide web as we know today.
+
+Between 1989-1994 he and his team at CERN (an European organization for research) created the first website together with the first web server.
+
+Technologies used in his invention—HTTP—Hypertext Transfer Protocol and HTML—Hypertext Markup Language—are still the foundations of every website today.
+
+The internet was a lively place even before the web.
+
+People built communities via Bulletin Board Systems (BBS) , they were participating in forums and newsgroups with Usenet , exchanging emails and files via technologies which still exists today: SMTP and FTP.
+
+The web break through with links. By clicking from a website to another the World Wide Web became a network where discovery and participation was in the same way easy.
+
+The 'dumb' terminal browser made room for graphical browsers for a pleasant visualisation of websites. Visual web content editors enabled non-scientist adding content to the web. Bloom.
+
+This was the time when CERN made a bold move: they've released the World Wide Web source code to Public Domain. Now everybody on the world could contribute to the progress of the web and make sure it will stay open.
+
+In five years the web grew over 10,000 servers and 10 million users including commercial players. The success was inevitable.
