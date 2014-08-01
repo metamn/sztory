@@ -1,78 +1,18 @@
 @mixin timeline {
   @include block;
   
-  position: relative;
-  z-index: 1;
-  
-  #timeline-border {
-    height: 100%;
-    border-left: $gutter/4 solid;
-
-    position: absolute;
-    left: $gutter * 2 + $gutter/8;
-    z-index: 1;
+  article.timeline {
+    @include font(body);
+    @include typographic-elements;
+    margin-bottom: row(1);
     
-    display: none;
+    h1 {
+      font-size: $heading-level-1;
+      margin-bottom: $gutter;
+    }
   }
   
-  article.timeline {
-    @include block;
-    margin: $gutter 0;
-    position: relative;
-    z-index: 2;
-    
-    .date, h1, aside {
-      float: left;
-    }
-    
-    .date {
-      width: calc(#{col(1)} - #{$gutter});
-      padding: $gutter/2;
-      
-      time {
-        @include date($gutter*3);
-      }
-    }
-    
-    h1, aside {
-      width: calc(100% - #{col(1)} - #{$gutter * 2});
-      padding: $gutter*2 - $gutter/4 $gutter 0;
-    }
-
-    h1 {
-      @include font(title);
-    } 
-
-    aside {
-      @include font(body);
-      
-      article {
-        @include block;
-        margin-right: col(1);
-        
-        &.text {
-          @include typographic-elements;
-        }
-
-        &.first-website {
-          .iframe {
-            @include iframe($text-width*2, $text-width*2);
-          }
-        }
-        
-        &.image {
-          margin: $gutter 0;
-          
-          figure {
-            @include figure;
-          }
-        }
-      }
-    }
-
+  figure, img, .iframe, table {
     display: none;
-    &.active {
-      display: block;
-    }
   }
 }
