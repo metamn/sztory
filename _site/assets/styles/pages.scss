@@ -1,8 +1,12 @@
-//@include full-screen;
 
 html {
   body {
+    @include typographic-grid;
+    @include color;
+    
     .container {
+      @include container;
+      
       #title {
         @include title;
       }
@@ -17,10 +21,6 @@ html {
 
       #timeline {
         @include timeline;
-      }
-
-      #technology, #content, #people {
-        display: none;
       }
     }
   }

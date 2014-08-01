@@ -1,32 +1,14 @@
 /*
-Syntax error: Undefined mixin 'title'.
-        on line 7 of /home/cs/work/sztory/assets/styles/pages.scss, in `title'
-        from line 7 of /home/cs/work/sztory/assets/styles/pages.scss
+Syntax error: Undefined mixin 'typographic-grid'.
+        on line 4 of /home/cs/work/sztory/assets/styles/pages.scss, in `typographic-grid'
+        from line 4 of /home/cs/work/sztory/assets/styles/pages.scss
+
+1: /home/cs/work/sztory/assets/styles/pages.scss
 
 Backtrace:
-/home/cs/work/sztory/assets/styles/pages.scss:7:in `title'
-/home/cs/work/sztory/assets/styles/pages.scss:7
+/home/cs/work/sztory/assets/styles/pages.scss:4:in `typographic-grid'
+/home/cs/work/sztory/assets/styles/pages.scss:4
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -78,11 +60,11 @@ Backtrace:
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:31:in `create'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:26:in `block in created'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `created'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:17:in `refresh'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
 /var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:205:in `call'
 /var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:205:in `block in watch'
@@ -110,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'title'.\A         on line 7 of /home/cs/work/sztory/assets/styles/pages.scss, in `title'\A         from line 7 of /home/cs/work/sztory/assets/styles/pages.scss"; }
+  content: "Syntax error: Undefined mixin 'typographic-grid'.\A         on line 4 of /home/cs/work/sztory/assets/styles/pages.scss, in `typographic-grid'\A         from line 4 of /home/cs/work/sztory/assets/styles/pages.scss\A \A 1: /home/cs/work/sztory/assets/styles/pages.scss"; }

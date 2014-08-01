@@ -1,3 +1,12 @@
+@mixin container {
+  margin: row(1) col(1);
+  
+  @include mobile {
+    margin: row(1) $gutter;
+  }
+}
+
+
 /* Center vertically or horizontally
 - http://davidwalsh.name/css-vertical-center
 */

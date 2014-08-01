@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One|Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Rammetto+One|Wire+One|Vollkorn);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -38,6 +38,11 @@ html body { font-size: 100%; line-height: 1.5; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
+html body { font-size: 100%; line-height: 1.5; color: #222222; background: white; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body .container { margin: 6.25em 6.45833em; }
+@media only screen and (max-width: 30em) { html body .container { margin: 6.25em 1.25em; } }
 html body .container #title { width: 100%; float: left; padding-bottom: 12.5em; color: #222222; background: white; overflow: hidden; }
 html body .container #title article { width: 100%; float: left; margin-top: 12.5em; margin-left: 6.45833em; position: relative; }
 @media only screen and (max-width: 47.999em) { html body .container #title article { margin-left: 3.22917em; } }
@@ -56,7 +61,7 @@ html body .container #intro article h1 { font-size: 4.2308em; font-family: 'Wire
 @media only screen and (max-width: 47.999em) { html body .container #intro article h1 { font-size: 2.6154em; } }
 @media only screen and (min-width: 90.001em) { html body .container #intro article h1 { font-size: 6.8462em; } }
 html body .container #intro article h1 span { color: #98bddc; }
-html body .container #intro article aside { margin: 1.25em 0; font-family: 'Lato'; font-size: larger; line-height: 1.75; }
+html body .container #intro article aside { margin: 1.25em 0; font-family: 'Vollkorn'; font-size: larger; line-height: 1.75; }
 html body .container #intro article aside span { color: #98bddc; }
 html body .container #journey { width: 100%; float: left; position: relative; }
 html body .container #journey canvas { width: 100%; float: left; max-height: 56.25em; }
@@ -65,27 +70,12 @@ html body .container #journey article { position: absolute; z-index: 1; left: 6.
 html body .container #journey article h1 { font-size: 4.2308em; font-family: 'Wire One'; }
 @media only screen and (max-width: 47.999em) { html body .container #journey article h1 { font-size: 2.6154em; } }
 @media only screen and (min-width: 90.001em) { html body .container #journey article h1 { font-size: 6.8462em; } }
-html body .container #timeline { width: 100%; float: left; position: relative; z-index: 1; }
-html body .container #timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.65625em; z-index: 1; display: none; }
-html body .container #timeline article.timeline { width: 100%; float: left; margin: 1.25em 0; position: relative; z-index: 2; display: none; }
-html body .container #timeline article.timeline .date, html body .container #timeline article.timeline h1, html body .container #timeline article.timeline aside { float: left; }
-html body .container #timeline article.timeline .date { width: calc(6.45833em - 1.25em); padding: 0.625em; }
-html body .container #timeline article.timeline .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #222222; visibility: hidden; }
-html body .container #timeline article.timeline .date time span { position: relative; top: 1.25em; left: 0.625em; }
-html body .container #timeline article.timeline .date time.visible { visibility: visible; background: white; }
-html body .container #timeline article.timeline h1, html body .container #timeline article.timeline aside { width: calc(100% - 6.45833em - 2.5em); padding: 2.1875em 1.25em 0; }
-html body .container #timeline article.timeline h1 { font-family: "Rammetto One"; }
-html body .container #timeline article.timeline aside { font-family: 'Lato'; }
-html body .container #timeline article.timeline aside article { width: 100%; float: left; margin-right: 6.45833em; }
-html body .container #timeline article.timeline aside article.text { max-width: 31.25em; }
-html body .container #timeline article.timeline aside article.text p + p { margin-top: 1.25em; }
-html body .container #timeline article.timeline aside article.first-website .iframe { width: 100%; float: left; position: relative; overflow: hidden; width: 62.5em; height: 62.5em; max-width: 100%; }
-@media only screen and (max-width: 47.999em) { html body .container #timeline article.timeline aside article.first-website .iframe { width: 31.25em; height: 31.25em; } }
-html body .container #timeline article.timeline aside article.first-website .iframe iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
-html body .container #timeline article.timeline aside article.image { margin: 1.25em 0; }
-html body .container #timeline article.timeline aside article.image figure img { max-width: 100%; }
-html body .container #timeline article.timeline.active { display: block; }
-html body .container #technology, html body .container #content, html body .container #people { display: none; }
+html body .container #timeline { width: 100%; float: left; }
+html body .container #timeline article.timeline { font-family: 'Vollkorn'; max-width: 31.25em; margin-bottom: 6.25em; }
+html body .container #timeline article.timeline p + p { margin-top: 1.25em; }
+html body .container #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
+html body .container #timeline article.timeline article.article { margin-bottom: 1.25em; }
+html body .container #timeline figure, html body .container #timeline img, html body .container #timeline .iframe, html body .container #timeline table { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
