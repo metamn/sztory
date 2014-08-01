@@ -74,6 +74,7 @@ html body .container #timeline { width: 100%; float: left; }
 html body .container #timeline article.timeline { font-family: 'Vollkorn'; max-width: 31.25em; margin-bottom: 6.25em; }
 html body .container #timeline article.timeline p + p { margin-top: 1.25em; }
 html body .container #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
+html body .container #timeline article.timeline article.article { margin-bottom: 1.25em; }
 html body .container #timeline figure, html body .container #timeline img, html body .container #timeline .iframe, html body .container #timeline table { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

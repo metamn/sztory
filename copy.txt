@@ -1,17 +1,22 @@
- At age 34 Timothy Berners-Lee—"TimBL" on the net—invents the world wide web as we know today.
+The web created by Tim Berners-Lee was academic: interlinked research documents built on text. Images were popping up in different windows, there were no colors and no design on webpages.
 
-Between 1989-1994 he and his team at CERN (an European organization for research) created the first website together with the first web server.
+Enter Marc Andreesseen and his friend Eric Bina. They have created the first popular browser, Mosaic, spinning out from academic environment to everyday desktop.
 
-Technologies used in his invention—HTTP—Hypertext Transfer Protocol and HTML—Hypertext Markup Language—are still the foundations of every website today.
+Now everybody could surf the web on PC/Mac as we do it today. There was no need for mainframes and cryptic operating systems. Mosaic became the killer application the web needed and led to the first internet boom in the nineties.
 
-The internet was a lively place even before the web.
+Nobody thought but it turned out Andreeseen has talent in business not just in technology. With Bina and a former founder of the iconic Silicon Graphics International they've started up a new company, Netscape, meant to become famous in web history.
 
-People built communities via Bulletin Board Systems (BBS) , they were participating in forums and newsgroups with Usenet , exchanging emails and files via technologies which still exists today: SMTP and FTP.
+Netscape was, well, the first web startup.
 
-The web break through with links. By clicking from a website to another the World Wide Web became a network where discovery and participation was in the same way easy.
+The problem was hard. Take the code from Mosaic, build a product which is still open source but also commercially viable, and face the competion springing up from the other Mosaic clones.
 
-The 'dumb' terminal browser made room for graphical browsers for a pleasant visualisation of websites. Visual web content editors enabled non-scientist adding content to the web. Bloom.
+The product became a success, the de-facto standard for web browsing. At it's peak in 1996 Netscape Navigator had a stunning 80% market share.
+The business model also became a standard on the internet: freemium, a combination of free and paid licences. In Netscape's case free for personal use, paid for commercial use. This model works even today.
 
-This was the time when CERN made a bold move: they've released the World Wide Web source code to Public Domain. Now everybody on the world could contribute to the progress of the web and make sure it will stay open.
+To became an internet legend and a 21st century cyber hero Andreeseen needed a Goliath—services offered by then-tech-god Microsoft.
 
-In five years the web grew over 10,000 servers and 10 million users including commercial players. The success was inevitable.
+Microsoft also built a browser based on Mosaic, the infamous Internet Explorer, and planned to roll out a monopoly over the web, as did it with Windows in desktop operating systems. Monopoly was their company culture and business model.
+
+The first browser war started and involved everybody from producers to web surfers. Some websites worked well in a browser but broken in another; Internet Explorer came pre-installed with Windows and let noobs think there is no alternative to browsing; Developers and designers had nightmare building for Explorer since Microsoft overruled the web standards; The cost of cross-browser compatible websites doubled or even tripled.
+
+The war went to Andreeseen even if this first fight went Microsoft. Today, after ten years Microsoft is non-significative in web when Mozilla, the successor of Netscape is a cornerstone. Andreeseen sold Netscape to AOL for a stunning $4.2bn and estabilished himself as one of the most respectable figures in the web business with Twitter, Facebook, Pinterest, Github & co. in his company's portfolio.
