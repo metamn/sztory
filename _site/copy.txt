@@ -1,9 +1,11 @@
- In ten years the web managed to conquer all visual creative industries—gaming, print, publishing, advertising—except motion picture. This was a success.
+ In the last seven years of mobile apps and networks, multi-billion dollar acquisitions in this market coming out from nowhere, international privacy scandals, and with the Internet of Things on radar the picture is clear. The web will stay as a second class citizen, as a set of interconnected and open websites with high quality content, when first class will be taken by signals collected into ubiquoutos and uniform streams from everything and everybody on Earth.
 
-The only thing left orphan was the content. The typical workflow of creating stories for the web was complicated. Somebody invented the copy, asked a designer to make it visually compelling in Photoshop, then translated to web by a developer and deployed to a web server by another person, the sysadmin. Changes and updates to a website went through again this magic circle. Slow and frustrating. For everybody. Middlemen everywhere.
+This is a little bit eliberating for creatives and thinkers.
 
-Enter Typo3. A so calledd Content Management System (CMS) meant to cut at least one middlemen, the sysadmin, and definitively improve the content creation process empowering the content creator, not the designer and the developer.
+As taking a book or a magazine for relaxation, entertainment and deep learning—the web will become the same companion. Daytime we will be guided by the living things around and we will flow with the stream. When looking for something outstanding, or want to produce something interesting we will use the web.
 
-The CMS was a step forward for the media industry. Content people could log in to an online dashboard, create articles and posts and publish them. The design and the associated web code were initially created by designers and developers—their further task remained to style periodically new content types.
+It's no surprise New York Times 'invented' storytelling. They've learnt how to survive the print-to-digital metasystem transformation with a paywall and better content.
 
-Deployment and server infrastructure was fully transparent too. In this pure environment content became reigning and people started to create content in it's own enabling the blogging revolution which lead to social networks.
+The good news for the web is that matured to a level to rival television. With motion picture embedded in recent websites, the full typographic arsenal domesticated from the print industry, games running in the browser—the web mixed up what was best in old mediums, and, by it's nature, made it open and available to large communities to assure it's own evolution.
+
+The web is dead, long live the web.
