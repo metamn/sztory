@@ -1,13 +1,9 @@
- In the nineties with the success of Windows cumputers turned into game stations. Remember Wolfenstein 3D and Doom?
-As the browser emerged into a new universal platform the need to make it gaming friendly was an urge.
+ In ten years the web managed to conquer all visual creative industries—gaming, print, publishing, advertising—except motion picture. This was a success.
 
-Game programmer Johnatan Gay saw this opportunity first and created a web environment where desktop-like animations were possible.
+The only thing left orphan was the content. The typical workflow of creating stories for the web was complicated. Somebody invented the copy, asked a designer to make it visually compelling in Photoshop, then translated to web by a developer and deployed to a web server by another person, the sysadmin. Changes and updates to a website went through again this magic circle. Slow and frustrating. For everybody. Middlemen everywhere.
 
-His product and company acquired by creative software giants Macromedia later went to Adobe and became de-facto standard for web based interactive media.
+Enter Typo3. A so calledd Content Management System (CMS) meant to cut at least one middlemen, the sysadmin, and definitively improve the content creation process empowering the content creator, not the designer and the developer.
 
-Flash was fresh air for web, a killer application which made everybody happy. Advertisers could have now animated banners, web designers and developers could create cartoon-like websites, games were everywhere, scientists show us magic with animated visualizations, print designers could embed their best of typography into websites, and the possibilities were endless.
+The CMS was a step forward for the media industry. Content people could log in to an online dashboard, create articles and posts and publish them. The design and the associated web code were initially created by designers and developers—their further task remained to style periodically new content types.
 
-Web content become rich, all types of users satisfied. After ten years 96% of all browsers were using Flash and there were 2 million professionals creating content with.
-
-Some success stories come to and end. More often those who ignore the basic rules. Flash violated the first rule of the internet, the openness. Like a black box inside the web browser nobody knew what was inside. Even Google could not figure out what a Flash site is and penalized them in search results. With no community behind it's closed code base the mobile revolution took on surprise Flash, and it's parent company Adobe. In 2011 the black box grew over the mobile device and even a powerful company couldn't save this wonder technology from disappearance.
-
+Deployment and server infrastructure was fully transparent too. In this pure environment content became reigning and people started to create content in it's own enabling the blogging revolution which lead to social networks.
