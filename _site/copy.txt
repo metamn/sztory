@@ -1,19 +1,13 @@
- Unlike Eric Mayer "The King of CSS", Jakob Nielsen a Danish researcher later coined as "The King of Usability" has a highly visible public so controversial profile.
+ In the nineties with the success of Windows cumputers turned into game stations. Remember Wolfenstein 3D and Doom?
+As the browser emerged into a new universal platform the need to make it gaming friendly was an urge.
 
-While other pioneers were working on the web infrastructure—the browser, structuring (HTML) and styling (CSS) content— Nielsen started to think with the readers and users mind.
+Game programmer Johnatan Gay saw this opportunity first and created a web environment where desktop-like animations were possible.
 
-In the first years the World Wild Web looks funny; there were no web designers, web developers, user experience engineers but sysadmins and webmasters. With Computer Science background these gatekeepers of the web often came up with ... strange visual solutions.
+His product and company acquired by creative software giants Macromedia later went to Adobe and became de-facto standard for web based interactive media.
 
-In this scene appears a young scientist fluent in Human-Computer Interactions with strong support from an IT giant, Sun Microsystems.
+Flash was fresh air for web, a killer application which made everybody happy. Advertisers could have now animated banners, web designers and developers could create cartoon-like websites, games were everywhere, scientists show us magic with animated visualizations, print designers could embed their best of typography into websites, and the possibilities were endless.
 
-    You're supposed to be the world's leading expert in your field, so you figure out what would be most important for the company for you to work on. 
+Web content become rich, all types of users satisfied. After ten years 96% of all browsers were using Flash and there were 2 million professionals creating content with.
 
-Jacob Nielsen's Bio
+Some success stories come to and end. More often those who ignore the basic rules. Flash violated the first rule of the internet, the openness. Like a black box inside the web browser nobody knew what was inside. Even Google could not figure out what a Flash site is and penalized them in search results. With no community behind it's closed code base the mobile revolution took on surprise Flash, and it's parent company Adobe. In 2011 the black box grew over the mobile device and even a powerful company couldn't save this wonder technology from disappearance.
 
-Nielsen started to research what makes websites work, how to deliver the message in this shiny new medium. He was not focused on graphic design—typography, layout, colors, icons, etc.— but influencing visistor's behaviour in such way to achieve a goal like clicking a button.
-
-His results are de-facto standard in today's web user interface design: F-Shaped Pattern For Reading Web Content , Design Guidelines for Homepage Usability and 10 Usability Heuristics for User Interface Design .
-
-He concludes "visitors can focus on five things on a single page" and identifies these focus points with their function:
-
-Well designed pages today follows these rules. You don't have to wonder why sometimes you are getting excited to add things in your shopping cart.
