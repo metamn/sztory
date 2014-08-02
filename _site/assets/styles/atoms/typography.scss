@@ -55,12 +55,14 @@ $heading-level-4: 6.8462em;
 @mixin blockquote {
   blockquote {
     font-style: italic;
+    letter-spacing: $gutter/12;
     
     margin-top: $gutter;
     margin-bottom: $gutter;
     
     .blockquote-source {
       font-style: normal;
+      letter-spacing: normal;
       
       &:before {
         content: '\2012';
@@ -72,5 +74,6 @@ $heading-level-4: 6.8462em;
 @mixin q {
   q {
     font-style: italic;
+    letter-spacing: $gutter/12;
   }
 }
