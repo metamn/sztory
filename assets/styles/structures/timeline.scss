@@ -22,13 +22,20 @@
       .article {
         margin-bottom: $gutter;
         
-        h3 {
-          font-size: $heading-level-1;
-          @include color($grey);
+        &.text {
+          h3 {
+            font-style: italic;
+            @include color($grey);
+          }
+          
+          &:first-of-type {
+            @include hide-title;
+          }
         }
         
         &.image {
           @include container;
+          @include hide-title;
 
           figure {
             @include figure;
