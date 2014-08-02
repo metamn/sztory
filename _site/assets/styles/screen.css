@@ -43,10 +43,12 @@ html body { font-size: 125%; line-height: 1.5; color: #222222; background: white
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 html body #timeline { width: 100%; float: left; }
 html body #timeline article.timeline { margin-bottom: 6.25em; }
-html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { max-width: 31.25em; margin: 0 6.45833em; }
-html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
+html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin: 0 6.45833em; max-width: 31.25em; }
 @media only screen and (max-width: 30em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin: 0 1.25em; } }
-html body #timeline article.timeline figure img { max-width: 100%; }
+html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
+html body #timeline article.timeline .image { margin: 0 6.45833em; }
+@media only screen and (max-width: 30em) { html body #timeline article.timeline .image { margin: 0 1.25em; } }
+html body #timeline article.timeline .image figure img { max-width: 100%; }
 html body #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
 html body #timeline article.timeline article.article { margin-bottom: 1.25em; }
 

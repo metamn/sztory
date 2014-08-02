@@ -5,13 +5,18 @@
     margin-bottom: row(1);
     
     .text, .date, .title {
-      @include typographic-elements;
       @include container;
+      @include typographic-elements;
     }
     
-    figure {
-      @include figure;
+    .image {
+      @include container;
+      
+      figure {
+        @include figure;
+      }
     }
+    
     
     h1 {
       font-size: $heading-level-1;
