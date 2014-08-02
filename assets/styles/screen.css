@@ -17,9 +17,9 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-html body { font-size: 100%; line-height: 1.5; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body { font-size: 125%; line-height: 1.5; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 150%; line-height: 1.5; } }
 
 /*
 
@@ -34,13 +34,13 @@ html body { font-size: 100%; line-height: 1.5; }
 */
 section h3, nav h3 { display: none; }
 
-html body { font-size: 100%; line-height: 1.5; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body { font-size: 125%; line-height: 1.5; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 150%; line-height: 1.5; } }
 
-html body { font-size: 100%; line-height: 1.5; color: #222222; background: white; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; line-height: 1.25; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body { font-size: 125%; line-height: 1.5; color: #222222; background: white; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 150%; line-height: 1.5; } }
 html body .container { margin: 6.25em 6.45833em; }
 @media only screen and (max-width: 30em) { html body .container { margin: 6.25em 1.25em; } }
 html body .container #title { width: 100%; float: left; padding-bottom: 12.5em; color: #222222; background: white; overflow: hidden; }
