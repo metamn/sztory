@@ -1,22 +1,40 @@
 @mixin timeline {
   @include block;
+  @include hide-title;
   
   article.timeline {
-    @include font(body);
-    @include typographic-elements;
     margin-bottom: row(1);
+    
+    .text, .date, .title {
+      @include container;
+      @include typographic-elements;
+    }
+    
     
     h1 {
       font-size: $heading-level-1;
       margin-bottom: $gutter;
     }
     
-    article.article {
-      margin-bottom: $gutter;
+    aside {
+      @include hide-title;
+      
+      .article {
+        margin-bottom: $gutter;
+        
+        h3 {
+          font-size: $heading-level-1;
+          @include color($grey);
+        }
+        
+        &.image {
+          @include container;
+
+          figure {
+            @include figure;
+          }
+        }
+      }
     }
-  }
-  
-  figure, img, .iframe, table {
-    display: none;
   }
 }

@@ -1,8 +1,10 @@
 @mixin container {
-  margin: row(1) col(1);
+  margin-left: col(1);
+  margin-right: col(1);
   
   @include mobile {
-    margin: row(1) $gutter;
+    margin-left: $gutter;
+    margin-right: $gutter;
   }
 }
 
@@ -62,10 +64,11 @@
 }
 
 
-section h3, nav h3 {
-  display: none;
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
 }
-
 
 @mixin block {
   width: 100%;

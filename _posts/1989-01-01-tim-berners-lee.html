@@ -16,15 +16,9 @@ sources:
     title: The Home of The First Website
 ---
 
-<article class="article profile image">
-  <h3>Profile</h3>
-  
-  {% include responsive-images.html title="Tim Berners-Lee" link="" normal="/assets/images/tim-berners-lee.jpg" mobile="/assets/images/tim-berners-lee.jpg" %}
-  {% include responsive-images.html title="Tim Berners-Lee" link="" normal="/assets/images/marc-andreesseen.jpg" mobile="/assets/images/tim-berners-lee.jpg" %}
-</article>
 
 <article class="article excerpt text">
-  <h3>Excerpt</h3>
+  <h3>Invention</h3>
   
   <p>
     At age 34 Timothy Berners-Lee&mdash;"TimBL" on the net&mdash;invents the world wide web as we know today.
@@ -40,20 +34,19 @@ sources:
 </article>
 
 <article class="article first-website image">
-  <h3>The First Website</h3>
+  <h3>First Website</h3>
   
-  <div class="iframe">
-    <p>
-      You can try live the first website:
-    </p>
-    <!--
-    <iframe src="http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html" allowfullscreen="" frameborder="0"></iframe>
-    -->
-  </div>
+  {% include responsive-images.html title="The first website" link="" normal="/assets/images/the-first-website.png" mobile="/assets/images/the-first-website.png" %}
+</article>
+
+<article class="article first-webserver image">
+  <h3>First Webserver</h3>
+  
+  {% include responsive-images.html title="The first webserver" link="" normal="/assets/images/the-first-webserver.jpg" mobile="/assets/images/the-first-webserver.jpg" %}
 </article>
 
 <article class="article summary text">
-  <h3>Summary</h3>
+  <h3>Openness is growth</h3>
   
   <p>
     The internet was a lively place even before the web.
@@ -80,7 +73,3 @@ sources:
   </p>
 </article>
 
-<article class="article image">
-  <h3>The ViolaWWW screenshot</h3>
-  {% include responsive-images.html title="The ViolaWWW graphical browser" link="" normal="/assets/images/viola-www.png" mobile="/assets/images/viola-www.png" %}
-</article>
