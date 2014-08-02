@@ -25,6 +25,7 @@
         &.text {
           h3 {
             font-style: italic;
+            font-size: larger;
             @include color($grey);
           }
           
