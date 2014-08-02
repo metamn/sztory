@@ -45,6 +45,8 @@ html body #timeline article.timeline { margin-bottom: 6.25em; }
 html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 6.45833em; margin-right: 6.45833em; max-width: 31.25em; }
 @media only screen and (max-width: 30em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
+html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a { color: #3e0a76; background: transparent; }
+html body #timeline article.timeline .text a:active, html body #timeline article.timeline .text a:visited, html body #timeline article.timeline .date a:active, html body #timeline article.timeline .date a:visited, html body #timeline article.timeline .title a:active, html body #timeline article.timeline .title a:visited { color: #a35af2; background: transparent; }
 html body #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
 html body #timeline article.timeline aside > h3 { display: none; }
 html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }

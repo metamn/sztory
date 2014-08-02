@@ -2,4 +2,5 @@
   max-width: $text-width;
   
   @include p;
+  @include link;
 }
