@@ -1,6 +1,11 @@
-@mixin link($fore: $product, $back: transparent) {
-  a, a:visited {
-    @include color($fore, $back);
+@mixin link {
+  a {
+    @include color($color, transparent);
     text-decoration: none;
+    border-bottom: 1px solid $gray;
+    
+    &:hover {
+      border-color: $color;
+    }
   }
 }

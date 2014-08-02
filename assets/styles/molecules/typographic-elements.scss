@@ -2,4 +2,8 @@
   max-width: $text-width;
   
   @include p;
+  @include link;
+  @include abbr;
+  @include blockquote;
+  @include q;
 }
