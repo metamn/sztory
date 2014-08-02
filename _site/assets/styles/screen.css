@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html body { font-size: 125%; line-height: 1.5; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 150%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
 /*
 
@@ -36,11 +36,11 @@ section h3, nav h3 { display: none; }
 
 html body { font-size: 125%; line-height: 1.5; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 150%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 
 html body { font-size: 125%; line-height: 1.5; color: #222222; background: white; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 150%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
 html body .container { margin: 6.25em 6.45833em; }
 @media only screen and (max-width: 30em) { html body .container { margin: 6.25em 1.25em; } }
 html body .container #title { width: 100%; float: left; padding-bottom: 12.5em; color: #222222; background: white; overflow: hidden; }
@@ -75,7 +75,6 @@ html body .container #timeline article.timeline { font-family: 'Vollkorn'; max-w
 html body .container #timeline article.timeline p + p { margin-top: 1.25em; }
 html body .container #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
 html body .container #timeline article.timeline article.article { margin-bottom: 1.25em; }
-html body .container #timeline figure, html body .container #timeline img, html body .container #timeline .iframe, html body .container #timeline table { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
