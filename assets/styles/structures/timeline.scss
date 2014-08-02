@@ -2,9 +2,16 @@
   @include block;
   
   article.timeline {
-    @include font(body);
-    @include typographic-elements;
     margin-bottom: row(1);
+    
+    .text, .date, .title {
+      @include typographic-elements;
+      @include container;
+    }
+    
+    figure {
+      @include figure;
+    }
     
     h1 {
       font-size: $heading-level-1;

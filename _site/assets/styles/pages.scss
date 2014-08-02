@@ -3,25 +3,10 @@ html {
   body {
     @include typographic-grid;
     @include color;
+    @include font;
     
-    .container {
-      @include container;
-      
-      #title {
-        @include title;
-      }
-
-      #intro {
-        @include intro;
-      }
-
-      #journey {
-        @include journey;
-      }
-
-      #timeline {
-        @include timeline;
-      }
+    #timeline {
+      @include timeline;
     }
   }
 }

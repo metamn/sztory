@@ -1,8 +1,8 @@
 @mixin container {
-  margin: row(1) col(1);
+  margin: 0 col(1);
   
   @include mobile {
-    margin: row(1) $gutter;
+    margin: 0 $gutter;
   }
 }
 

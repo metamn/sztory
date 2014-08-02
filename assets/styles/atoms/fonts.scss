@@ -15,7 +15,7 @@
 
 
 // Font familes
-@mixin font($type) {
+@mixin font($type: body) {
   @if ($type == title) {
     font-family: "Rammetto One";
   
