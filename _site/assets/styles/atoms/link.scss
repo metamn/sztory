@@ -1,9 +1,13 @@
-@mixin link($active: $link, $visited: $link-visited, $back: transparent) {
+@mixin link($active: $link, $visited: $link-visited, $hover: $link-hover, $back: transparent) {
   a {
     @include color($active, $back);
     
     &:active, &:visited {
       @include color($visited, $back);
+    }
+    
+    &:hover {
+      @include color($hover, $back);
     }
   }
 }
