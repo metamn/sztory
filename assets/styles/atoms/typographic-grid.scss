@@ -1,6 +1,9 @@
 // Breakpoints
 // =======================================================================================================
 
+
+// These are calculated on font-size: 100%, ie 16px
+// - if font-size goes up breakpoints must be recalculated
 $breakpoint-mobile: 30em; // 480px
 $breakpoint-tablet: 48em; // 768px
 $breakpoint-normal-screen: 80em; // 1024px
