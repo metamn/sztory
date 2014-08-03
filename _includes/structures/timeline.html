@@ -1,7 +1,7 @@
 <section id="timeline">
   <h3>Timeline</h3>
 
-  {% for post in site.posts reversed %}
+  {% for post in site.posts limit:1 offset:13 %}
     {% include organisms/timeline.html %}
   {% endfor %}  
 </section>

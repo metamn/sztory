@@ -55,7 +55,7 @@ $heading-level-4: 6.8462em;
 @mixin blockquote {
   blockquote {
     font-style: italic;
-    letter-spacing: $gutter/12;
+    letter-spacing: $gutter/16;
     
     margin-top: $gutter;
     margin-bottom: $gutter;
@@ -68,12 +68,16 @@ $heading-level-4: 6.8462em;
         content: '\2012';
       }
     }
+    
+    p {
+      margin-left: $gutter;
+    }
   }
 }
 
 @mixin q {
   q {
     font-style: italic;
-    letter-spacing: $gutter/12;
+    letter-spacing: $gutter/16;
   }
 }

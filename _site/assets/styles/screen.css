@@ -50,10 +50,11 @@ html body #timeline article.timeline .text p + p, html body #timeline article.ti
 html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
 html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover { border-color: #0c0218; }
 html body #timeline article.timeline .text abbr, html body #timeline article.timeline .date abbr, html body #timeline article.timeline .title abbr { font-variant: small-caps; font-size: smaller; }
-html body #timeline article.timeline .text blockquote, html body #timeline article.timeline .date blockquote, html body #timeline article.timeline .title blockquote { font-style: italic; letter-spacing: 0.10417em; margin-top: 1.25em; margin-bottom: 1.25em; }
+html body #timeline article.timeline .text blockquote, html body #timeline article.timeline .date blockquote, html body #timeline article.timeline .title blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
 html body #timeline article.timeline .text blockquote .blockquote-source, html body #timeline article.timeline .date blockquote .blockquote-source, html body #timeline article.timeline .title blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
 html body #timeline article.timeline .text blockquote .blockquote-source:before, html body #timeline article.timeline .date blockquote .blockquote-source:before, html body #timeline article.timeline .title blockquote .blockquote-source:before { content: '\2012'; }
-html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q { font-style: italic; letter-spacing: 0.10417em; }
+html body #timeline article.timeline .text blockquote p, html body #timeline article.timeline .date blockquote p, html body #timeline article.timeline .title blockquote p { margin-left: 1.25em; }
+html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q { font-style: italic; letter-spacing: 0.07813em; }
 html body #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
 html body #timeline article.timeline aside > h3 { display: none; }
 html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
