@@ -1,16 +1,12 @@
 <!-- http://picture.responsiveimages.org/ -->
+
 <figure>
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source media="(max-width: 30em" srcset="{{ include.mobile }}, {{ include.tablet }} 2x">
-    <source media="(max-width: 80em" srcset="{{ include.tablet }}">
-    <!--
-    <source media="(min-width: 80em)" srcset="{{ include.desktop }}">
-    <source media="(min-width: 30em - 0.0001)" srcset="{{ include.tablet }}">
-    <img src="{{ include.mobile }}" srcset="{{ include.tablet }} 2x" alt="{{ include.title }}">
-    -->
+    <source media="(max-width: 30em" srcset="{{ site.url}}/{{ site.images}}/{{ include.mobile }}, {{ site.url}}/{{ site.images}}/{{ include.tablet }} 2x">
+    <source media="(max-width: 80em" srcset="{{ site.url}}/{{ site.images}}/{{ include.tablet }}">
     <!--[if IE 9]></video><![endif]-->
-    <img src="{{ include.desktop }}" alt="{{ include.title }}">
+    <img src="{{ site.url}}/{{ site.images}}/{{ include.desktop }}" alt="{{ include.title }}">
   </picture>
   
   <figcaption>{{ include.title }}</figcaption>
