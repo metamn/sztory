@@ -20,7 +20,7 @@
       @include hide-title;
       
       .article {
-        margin-bottom: $gutter;
+        margin-bottom: row(1);
         
         &.text {
           h3 {
