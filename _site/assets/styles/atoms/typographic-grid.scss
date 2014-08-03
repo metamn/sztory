@@ -19,11 +19,18 @@ $breakpoint-large-screen: 90em; // 1440px
   }
 }
 
+@mixin below-normal-screen {
+  @media only screen and (max-width: $breakpoint-normal-screen - 0.001) {
+    @content
+  }
+}
+
 @mixin normal-screen {
   @media only screen and (min-width: $breakpoint-tablet + 001) and (max-width: $breakpoint-large-screen) {
     @content
   }
 }
+
 
 @mixin large-screen-and-up {
   @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
@@ -40,9 +47,9 @@ $breakpoint-large-screen: 90em; // 1440px
 // The basic font-size
 // - the first rule of typography is to make the basic font perfectly readable 
 // - in a responsive environment this means we will have different, scaling settings for small screens (tablets and below), normal screens (laptops) and monitors
-$small-font-size: 100%;
-$font-size: 125%;
-$large-font-size: 125%;
+$small-font-size: 125%;
+$font-size: 150%;
+$large-font-size: 175%;
 
 // The basic line height
 // - this is 125% of the $font-size

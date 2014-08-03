@@ -17,9 +17,9 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-html body { font-size: 125%; line-height: 1.5; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body { font-size: 150%; line-height: 1.5; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 125%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 175%; line-height: 1.5; } }
 
 /*
 
@@ -34,18 +34,18 @@ html body { font-size: 125%; line-height: 1.5; }
 /* Center vertically or horizontally
 - http://davidwalsh.name/css-vertical-center
 */
-html body { font-size: 125%; line-height: 1.5; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body { font-size: 150%; line-height: 1.5; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 125%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 175%; line-height: 1.5; } }
 
-html body { font-size: 125%; line-height: 1.5; color: #0c0218; background: white; font-family: 'Vollkorn'; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 100%; line-height: 1.5; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; line-height: 1.5; } }
+html body { font-size: 150%; line-height: 1.5; color: #0c0218; background: white; font-family: 'Vollkorn'; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 125%; line-height: 1.5; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 175%; line-height: 1.5; } }
 html body #timeline { width: 100%; float: left; }
 html body #timeline > h3 { display: none; }
 html body #timeline article.timeline { margin-bottom: 6.25em; }
 html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 6.45833em; margin-right: 6.45833em; max-width: 31.25em; }
-@media only screen and (max-width: 30em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 1.25em; margin-right: 1.25em; } }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
 html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
 html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover { border-color: #0c0218; }
@@ -61,7 +61,7 @@ html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
 html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
 html body #timeline article.timeline aside .article.text:first-of-type > h3 { display: none; }
 html body #timeline article.timeline aside .article.image { margin-left: 6.45833em; margin-right: 6.45833em; }
-@media only screen and (max-width: 30em) { html body #timeline article.timeline aside .article.image { margin-left: 1.25em; margin-right: 1.25em; } }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #timeline article.timeline aside .article.image > h3 { display: none; }
 html body #timeline article.timeline aside .article.image figure img { max-width: 100%; }
 
