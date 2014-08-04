@@ -52,11 +52,7 @@ $heading-level-4: 6.8462em;
 @mixin abbr {
   abbr {
     font-variant: small-caps;
-<<<<<<< HEAD
-    letter-spacing: $gutter/8;
-=======
     letter-spacing: $gutter/16;
->>>>>>> dev
     font-size: smaller;
   }
 }
