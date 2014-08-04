@@ -2,4 +2,13 @@
   img {
     max-width: 100%;
   }
+  
+  figcaption {
+    font-family: 'Oswald';
+    font-size: smaller;
+  }
+  
+  + figure {
+    margin-top: $gutter;
+  }
 }

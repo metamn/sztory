@@ -1,5 +1,5 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Oswald:300);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -57,13 +57,15 @@ html body #timeline article.timeline .text blockquote p, html body #timeline art
 html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q { font-style: italic; letter-spacing: 0.07813em; }
 html body #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
 html body #timeline article.timeline aside > h3 { display: none; }
-html body #timeline article.timeline aside .article { margin-bottom: 6.25em; }
+html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
 html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
 html body #timeline article.timeline aside .article.text:first-of-type > h3 { display: none; }
 html body #timeline article.timeline aside .article.image { margin-left: 6.45833em; margin-right: 6.45833em; }
 @media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #timeline article.timeline aside .article.image > h3 { display: none; }
 html body #timeline article.timeline aside .article.image figure img { max-width: 100%; }
+html body #timeline article.timeline aside .article.image figure figcaption { font-family: 'Oswald'; font-size: smaller; }
+html body #timeline article.timeline aside .article.image figure + figure { margin-top: 1.25em; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

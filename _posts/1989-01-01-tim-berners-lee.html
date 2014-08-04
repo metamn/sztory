@@ -36,7 +36,15 @@ sources:
 <article class="article first-website image">
   <h3>First Website</h3>
   
-  {% include atoms/picture.html title="The first website" link="" desktop="the-first-website.png" tablet="the-first-website-portrait.png" mobile="the-first-website-portrait-small.png "%}
+  {% capture caption %}
+    <h4>The first website</h4>
+  
+    <p>
+      <abbr>CERN</abbr> restored the original website and made it available live. 
+    </p>
+  {% endcapture %}
+  
+  {% include atoms/picture.html title="The first website" figcaption=caption desktop="the-first-website.png" tablet="the-first-website-portrait.png" mobile="the-first-website-portrait-small.png "%}
 </article>
 
 <article class="article text">
@@ -66,7 +74,7 @@ sources:
 
 
 <article class="article text">
-  <h3>Web is Links</h3>
+  <h3>Web &#61; Links</h3>
   
   <p>
     The web breakthrough with links. By clicking from a website to another the World Wide Web became a network where discovery and participation was in the same way easy.

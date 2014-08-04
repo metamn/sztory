@@ -1,5 +1,12 @@
 <!-- http://picture.responsiveimages.org/ -->
 
+
+{% if include.figcaption %}
+  {% assign figcaption = include.figcaption %}
+{% else %}
+  {% assign figcaption = include.title %}
+{% endif %}
+
 <figure>
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -9,5 +16,5 @@
     <img src="{{ site.url}}/{{ site.images}}/{{ include.desktop }}" alt="{{ include.title }}">
   </picture>
   
-  <figcaption>{{ include.title }}</figcaption>
+  <figcaption>{{ figcaption }}</figcaption>
 </figure>
