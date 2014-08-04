@@ -33,6 +33,11 @@ $heading-level-4: 6.8462em;
 }
 
 
+@mixin h4 {
+  font-weight: bold;
+}
+
+
 
 // Common elements
 

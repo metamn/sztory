@@ -1,14 +1,17 @@
 @mixin figure {
+  margin-bottom: $gutter*2;
+  
   img {
     max-width: 100%;
   }
   
   figcaption {
-    font-family: 'Oswald';
+    @include typographic-elements;
+    @include font(caption);
     font-size: smaller;
-  }
-  
-  + figure {
-    margin-top: $gutter;
+    
+    h4 {
+      @include h4;
+    }
   }
 }
