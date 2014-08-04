@@ -43,6 +43,23 @@
             @include figure;
           }
         }
+        
+        &.full-width {
+          @include block;
+          margin-left: 0;
+          margin-right: 0;
+          
+          figure {
+            
+            img {
+              width: 100%;
+            }
+            
+            figcaption {
+              @include container;
+            }
+          }
+        }
       }
     }
   }

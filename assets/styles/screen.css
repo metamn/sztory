@@ -76,6 +76,10 @@ html body #timeline article.timeline aside .article.image figure figcaption bloc
 html body #timeline article.timeline aside .article.image figure figcaption blockquote p, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption blockquote p { margin-left: 1.25em; }
 html body #timeline article.timeline aside .article.image figure figcaption q, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption q { font-style: italic; letter-spacing: 0.07813em; }
 html body #timeline article.timeline aside .article.image figure figcaption h4, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption h4 { font-weight: bold; }
+html body #timeline article.timeline aside .article.full-width, html body #internet-applications-timeline article.timeline aside .article.full-width { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+html body #timeline article.timeline aside .article.full-width figure img, html body #internet-applications-timeline article.timeline aside .article.full-width figure img { width: 100%; }
+html body #timeline article.timeline aside .article.full-width figure figcaption, html body #internet-applications-timeline article.timeline aside .article.full-width figure figcaption { margin-left: 6.45833em; margin-right: 6.45833em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.full-width figure figcaption, html body #internet-applications-timeline article.timeline aside .article.full-width figure figcaption { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #internet-applications-timeline { margin-left: 6.45833em; margin-right: 6.45833em; margn-top: 6.25em; position: relative; z-index: 1; }
 @media only screen and (max-width: 79.999em) { html body #internet-applications-timeline { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #internet-applications-timeline > h3 { display: block; }
