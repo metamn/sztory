@@ -76,18 +76,17 @@ html body #timeline article.timeline aside .article.image figure figcaption bloc
 html body #timeline article.timeline aside .article.image figure figcaption blockquote p, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption blockquote p { margin-left: 1.25em; }
 html body #timeline article.timeline aside .article.image figure figcaption q, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption q { font-style: italic; letter-spacing: 0.07813em; }
 html body #timeline article.timeline aside .article.image figure figcaption h4, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption h4 { font-weight: bold; }
-html body #internet-applications-timeline { position: relative; z-index: 1; }
+html body #internet-applications-timeline { margin-left: 6.45833em; margin-right: 6.45833em; margn-top: 6.25em; position: relative; z-index: 1; }
+@media only screen and (max-width: 79.999em) { html body #internet-applications-timeline { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #internet-applications-timeline > h3 { display: block; }
-html body #internet-applications-timeline > h3, html body #internet-applications-timeline aside { margin-left: 6.45833em; margin-right: 6.45833em; }
-@media only screen and (max-width: 79.999em) { html body #internet-applications-timeline > h3, html body #internet-applications-timeline aside { margin-left: 1.25em; margin-right: 1.25em; } }
 html body #internet-applications-timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.65625em; z-index: 1; }
-html body #internet-applications-timeline article.timeline { position: relative; z-index: 2; }
+html body #internet-applications-timeline article.timeline { position: relative; z-index: 2; margin-top: 2.5em; }
 html body #internet-applications-timeline article.timeline .date, html body #internet-applications-timeline article.timeline h1 { float: left; }
 html body #internet-applications-timeline article.timeline .date { width: auto; margin: 0; padding: 0.625em; }
 html body #internet-applications-timeline article.timeline .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #0c0218; }
 html body #internet-applications-timeline article.timeline .date time span { position: relative; top: 1.25em; left: 0.625em; }
 html body #internet-applications-timeline article.timeline h1 { max-width: 31.25em; margin-bottom: 0; margin-top: 1.25em; }
-html body #internet-applications-timeline article.timeline aside { width: 100%; float: left; position: relative; top: -1.25em; }
+html body #internet-applications-timeline article.timeline aside { width: 100%; float: left; left: 6.45833em; position: relative; top: -1.25em; }
 html body #internet-applications-timeline article.timeline .date, html body #internet-applications-timeline article.timeline aside { color: #0c0218; background: white; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

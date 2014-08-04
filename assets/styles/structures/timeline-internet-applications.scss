@@ -1,9 +1,7 @@
 @mixin timeline-internet-applications {
+  @include container;
   @include show-title;
-  
-  > h3, aside {
-    @include container;
-  }
+  margn-top: row(1);
   
   position: relative;
   z-index: 1;
@@ -20,6 +18,7 @@
   article.timeline {
     position: relative;
     z-index: 2;
+    margin-top: $gutter*2;
     
     .date, h1{
       float: left;
@@ -43,6 +42,7 @@
 
     aside {
       @include block;
+      left: col(1);
       position: relative;
       top: -$gutter;
     }
