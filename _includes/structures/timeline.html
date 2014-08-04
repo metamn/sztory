@@ -1,7 +1,9 @@
-<section id="timeline">
-  <h3>Timeline</h3>
+<section id="{{ include.title | downcase | remove:',' | remove:'&' | remove:"'" | remove: '"' | replace:' ', '-' }}">
+  <h3>{{ include.title }}</h3>
+  
+  <div id="timeline-border"></div>
 
-  {% for post in site.categories.timeline limit:1 offset:13 %}
+  {% for post in include.collection reversed %}
     {% include organisms/timeline.html %}
   {% endfor %}  
 </section>

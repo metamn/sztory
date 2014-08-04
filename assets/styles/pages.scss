@@ -5,8 +5,12 @@ html {
     @include color;
     @include font;
     
-    #timeline {
+    #timeline, #internet-applications-timeline {
       @include timeline;
+    }
+    
+    #internet-applications-timeline {
+      @include timeline-internet-applications;
     }
   }
 }
