@@ -70,6 +70,12 @@
   }
 }
 
+@mixin show-title {
+  > h3 {
+    display: block;
+  }
+}
+
 @mixin block {
   width: 100%;
   float: left;

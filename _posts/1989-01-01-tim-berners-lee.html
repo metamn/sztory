@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Tim Berners-Lee invented the web
+categories:
+  - timeline
 people:
   - name: Tim Berners-Lee
     url: http://www.w3.org/People/Berners-Lee/
@@ -44,7 +46,6 @@ sources:
       {% include atoms/link.html url="" title="Want to check it live?" %}
     </p>
   {% endcapture %}
-  
   {% include atoms/picture.html title="The first website" figcaption=caption desktop="the-first-website.png" tablet="the-first-website-portrait.png" mobile="the-first-website-portrait-small.png "%}
 </article>
 
@@ -88,6 +89,9 @@ sources:
 </article>
 
 
+{% include structures/timeline.html title="Internet Applications Timeline" collection=site.categories.internettimeline %}
+
+
 <article class="article text">
   <h3>Web &#61; Links</h3>
   
@@ -96,7 +100,7 @@ sources:
   </p>
   
   <p>
-    The &ldquo;dumb&rdquo; terminal browser made room for graphical browsers for a pleasant visualisation of websites. Visual web content editors enabled non-scientist adding content to the web. Bloom.
+    The &ldquo;dumb&rdquo; terminal browser made room for graphical browsers for a pleasant visualisation of websites. Visual web content editors enabled non-scientist adding content to the web. Boom.
   </p>
 </article>
   
@@ -109,5 +113,20 @@ sources:
   <p>
     In five years the web grew over 10,000 servers and 10 million users including commercial players. The success was inevitable.
   </p>
+</article>
+
+
+<article class="article image full-width">
+  <h3>The growth of internet users</h3>
+  
+  {% capture caption %}
+    <h4>Global Internet Users</h4>
+  
+    <p>
+      This is a beautiful interactive website (desktop only) showcasing the evolution of the web.
+      {% include atoms/link.html url="http://www.evolutionoftheweb.com/?hl=en#/growth/day" title="Want to check it live?" %}
+    </p>
+  {% endcapture %}
+  {% include atoms/picture.html title="Global Internet Users" figcaption=caption large="the-evolution-of-the-web.png" desktop="the-evolution-of-the-web-normal.png" tablet="the-evolution-of-the-web-portrait.png" mobile="the-evolution-of-the-web-portrait-small.png"%}
 </article>
 

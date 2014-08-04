@@ -10,8 +10,13 @@
 <figure>
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source media="(max-width: 480px" srcset="{{ site.url}}/{{ site.images}}/{{ include.mobile }}, {{ site.url}}/{{ site.images}}/{{ include.tablet }} 2x">
-    <source media="(max-width: 1024px" srcset="{{ site.url}}/{{ site.images}}/{{ include.tablet }}">
+    <source media="(max-width: 30em" srcset="{{ site.url}}/{{ site.images}}/{{ include.mobile }}, {{ site.url}}/{{ site.images}}/{{ include.tablet }} 2x">
+    <source media="(max-width: 48em" srcset="{{ site.url}}/{{ site.images}}/{{ include.tablet }}">
+    
+    {% if include.large %}
+      <source media="(min-width: 90em" srcset="{{ site.url}}/{{ site.images}}/{{ include.large }}">
+    {% endif %}
+    
     <!--[if IE 9]></video><![endif]-->
     <img src="{{ site.url}}/{{ site.images}}/{{ include.desktop }}" alt="{{ include.title }}">
   </picture>
