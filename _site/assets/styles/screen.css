@@ -55,7 +55,7 @@ html body #timeline article.timeline .text blockquote .blockquote-source, html b
 html body #timeline article.timeline .text blockquote .blockquote-source:before, html body #timeline article.timeline .date blockquote .blockquote-source:before, html body #timeline article.timeline .title blockquote .blockquote-source:before { content: '\2012'; }
 html body #timeline article.timeline .text blockquote p, html body #timeline article.timeline .date blockquote p, html body #timeline article.timeline .title blockquote p { margin-left: 1.25em; }
 html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q { font-style: italic; letter-spacing: 0.07813em; }
-html body #timeline article.timeline h1 { font-size: 1.6154em; margin-bottom: 1.25em; }
+html body #timeline article.timeline h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
 html body #timeline article.timeline aside > h3 { display: none; }
 html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
 html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
