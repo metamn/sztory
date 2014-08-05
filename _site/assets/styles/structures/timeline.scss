@@ -7,6 +7,7 @@
     @include timeline-internet-applications;
   }
   
+  
   article.timeline {
     margin-bottom: row(1);
     
@@ -14,6 +15,72 @@
       @include container;
       @include typographic-elements;
     }
+    
+    .date {
+      color: $color;
+      border-bottom: $gutter/4 solid;
+      margin: $gutter/2 0;
+      
+      cursor: pointer;
+      
+      &:after {
+        content: '\21e2';
+        @include transform(rotate(90deg));
+        display: inline-block;
+        font-weight: bold;
+        
+        color: $grey;
+        
+        float: right;
+        position: relative;
+        left: col(1);
+        margin-right: $gutter;
+        
+        @include below-normal-screen {
+          left: $gutter;
+        }
+      }
+      
+      &.hover {
+        &:after {
+          content: 'click for details ' '\21e2';
+          @include transform(rotate(0deg));
+          color: $green;
+          font-weight: normal;
+          font-style: italic;
+          font-family: 'Abel';
+        }
+      }
+    }
+    
+    aside {
+      article, section {
+        display: none;
+      }
+    }
+    
+    &.active {
+      .date {
+        &:after {
+          content: '\00d7';
+          @include transform(rotate(0deg));
+        }
+        
+        &:hover {
+          &:after {
+            content: 'click to hide ' '\00d7';
+            color: $red;
+          }
+        }
+      }
+      
+      aside {
+        article, section {
+          display: block;
+        }
+      }
+    }
+    
     
     
     h1 {
@@ -46,6 +113,7 @@
 
           figure {
             @include figure;
+            display: none;
             
             &#the-first-website {
               picture img {
@@ -57,8 +125,8 @@
         
         &.full-width {
           @include block;
-          margin-left: 0;
-          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
           
           figure {
             img {
