@@ -12,15 +12,23 @@
     @include block;
     padding-bottom: row(1);
     
+    @include background-image("/assets/images/eric-meyer-2.jpg");
     
-    .text, .date, .title, .tags {
+    
+    .text, .date, .title, .tags, .people {
       @include block;
-      @include container;
+      @include container(block);
       @include typographic-elements;
     }
     
     .title, .date, .tags {
       cursor: pointer;
+    }
+    
+    .people {
+      figure {
+        @include figure;
+      }
     }
     
     .tags {
