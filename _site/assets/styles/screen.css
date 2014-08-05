@@ -74,12 +74,11 @@ html body #timeline article.timeline .text q, html body #timeline article.timeli
 html body #timeline article.timeline .date { color: #0c0218; border-bottom: 0.3125em solid; margin: 0.625em 0; cursor: pointer; }
 html body #timeline article.timeline .date:after { content: '\21e2'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-weight: bold; color: #d9d7db; float: right; position: relative; left: 6.45833em; margin-right: 1.25em; }
 @media only screen and (max-width: 79.999em) { html body #timeline article.timeline .date:after { left: 1.25em; } }
-html body #timeline article.timeline .date.hover:after { content: 'click for details ' '\21e2'; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); color: #36e2c6; font-weight: normal; font-style: italic; font-family: 'Abel'; }
 html body #timeline article.timeline aside article, html body #timeline article.timeline aside section { display: none; }
 html body #timeline article.timeline.active .date:after { content: '\00d7'; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
-html body #timeline article.timeline.active .date:hover:after { content: 'click to hide ' '\00d7'; color: #e23636; }
 html body #timeline article.timeline.active aside article, html body #timeline article.timeline.active aside section { display: block; }
-html body #timeline article.timeline h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
+html body #timeline article.timeline .title { cursor: pointer; }
+html body #timeline article.timeline .title h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
 html body #timeline article.timeline aside > h3 { display: none; }
 html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
 html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
