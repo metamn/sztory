@@ -9,11 +9,32 @@
   
   
   article.timeline {
-    margin-bottom: row(1);
+    @include block;
+    padding-bottom: row(1);
     
-    .text, .date, .title {
+    
+    .text, .date, .title, .tags {
       @include container;
       @include typographic-elements;
+    }
+    
+    .tags {
+      margin-bottom: $gutter;
+      
+      ul {
+        @include list-inline;
+        font-size: small;
+        
+        li {
+          margin-bottom: $gutter + $gutter/2;
+          
+          span {
+            border: 1px solid $grey;
+            padding: $gutter/2 $gutter;
+            @include border-radius($gutter/4);
+          }
+        }
+      }
     }
     
     .date {
@@ -84,7 +105,7 @@
           h3 {
             font-style: italic;
             font-size: larger;
-            @include color($grey);
+            @include color($grey, transparent);
           }
           
           &:first-of-type {

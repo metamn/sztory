@@ -23,7 +23,7 @@
     z-index: 1;
   }
   
-  background: $gray;
+  //background: $gray;
   
   article.timeline {
     @include block;
@@ -80,7 +80,7 @@
 
     
     .date, aside {
-      @include color($color, $gray);
+      @include color($color, transparent);
     }
   }
 }
