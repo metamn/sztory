@@ -43,11 +43,13 @@ html body { font-size: 150%; line-height: 1.5; color: #0c0218; background: white
 @media only screen and (min-width: 90.001em) { html body { font-size: 175%; line-height: 1.5; } }
 html body #timeline { width: 100%; float: left; }
 html body #timeline > h3 { display: none; }
-html body #timeline #internet-applications-timeline { width: 100%; float: left; margin-left: 6.45833em; margin-right: 6.45833em; width: calc(100% - 12.91667em); margin-top: 1.25em; margin-bottom: 1.25em; overflow: hidden; position: relative; z-index: 1; }
-@media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline { margin-left: 1.25em; margin-right: 1.25em; width: calc(100% - 2.5em); } }
+html body #timeline #internet-applications-timeline { width: 100%; float: left; padding-left: 6.45833em; padding-right: 6.45833em; width: calc(100% - 12.91667em); margin-top: 1.25em; margin-bottom: 1.25em; overflow: hidden; position: relative; z-index: 1; background: #d9d7db; }
+@media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline { padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); } }
 html body #timeline #internet-applications-timeline > h3 { display: block; }
-html body #timeline #internet-applications-timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.03125em; z-index: 1; }
-html body #timeline #internet-applications-timeline article.timeline { width: 100%; float: left; margin: 1.25em 0 0; position: relative; z-index: 2; }
+html body #timeline #internet-applications-timeline #timeline-border { padding-left: 6.45833em; padding-right: 6.45833em; height: 100%; border-left: 0.3125em solid; font-size: smaller; position: absolute; margin-left: 2.03125em; z-index: 1; }
+@media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline #timeline-border { padding-left: 1.25em; padding-right: 1.25em; } }
+html body #timeline #internet-applications-timeline article.timeline { width: 100%; float: left; margin: 1.25em 0 0; position: relative; z-index: 2; font-size: smaller; }
+html body #timeline #internet-applications-timeline article.timeline .text, html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline .title { padding: 0; }
 html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline h1 { float: left; }
 html body #timeline #internet-applications-timeline article.timeline .date { width: 3.75em; margin: 0; }
 html body #timeline #internet-applications-timeline article.timeline .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #0c0218; text-align: center; }
@@ -55,12 +57,11 @@ html body #timeline #internet-applications-timeline article.timeline .date time 
 html body #timeline #internet-applications-timeline article.timeline .title { width: calc(100% - 3.75em); }
 html body #timeline #internet-applications-timeline article.timeline .title h1 { font-size: 100%; font-weight: bold; margin: 1.875em; }
 html body #timeline #internet-applications-timeline article.timeline aside { width: 100%; float: left; width: calc(100% - 3.75em); margin-left: 3.75em; position: relative; top: -1.25em; font-family: 'Abel'; }
-html body #timeline #internet-applications-timeline article.timeline aside p { margin-left: 4.6875em; }
-@media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline article.timeline aside p { margin-left: 1.875em; } }
-html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline aside { color: #0c0218; background: white; }
+html body #timeline #internet-applications-timeline article.timeline aside p { margin-left: 1.875em; }
+html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline aside { color: #0c0218; background: #d9d7db; }
 html body #timeline article.timeline { margin-bottom: 6.25em; }
-html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 6.45833em; margin-right: 6.45833em; max-width: 31.25em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 1.25em; margin-right: 1.25em; } }
+html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { padding-left: 6.45833em; padding-right: 6.45833em; max-width: 31.25em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { padding-left: 1.25em; padding-right: 1.25em; } }
 html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
 html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
 html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover { border-color: #0c0218; }
@@ -75,10 +76,10 @@ html body #timeline article.timeline aside > h3 { display: none; }
 html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
 html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
 html body #timeline article.timeline aside .article.text:first-of-type > h3 { display: none; }
-html body #timeline article.timeline aside .article.image { margin-left: 6.45833em; margin-right: 6.45833em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { margin-left: 1.25em; margin-right: 1.25em; } }
+html body #timeline article.timeline aside .article.image { padding-left: 6.45833em; padding-right: 6.45833em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { padding-left: 1.25em; padding-right: 1.25em; } }
 html body #timeline article.timeline aside .article.image > h3 { display: none; }
-html body #timeline article.timeline aside .article.image figure { margin-bottom: 2.5em; }
+html body #timeline article.timeline aside .article.image figure { margin-bottom: 2.5em; display: none; }
 html body #timeline article.timeline aside .article.image figure img { max-width: 100%; }
 html body #timeline article.timeline aside .article.image figure figcaption { max-width: 31.25em; font-family: 'Abel'; font-size: smaller; }
 html body #timeline article.timeline aside .article.image figure figcaption p + p { margin-top: 1.25em; }
@@ -92,10 +93,10 @@ html body #timeline article.timeline aside .article.image figure figcaption bloc
 html body #timeline article.timeline aside .article.image figure figcaption q { font-style: italic; letter-spacing: 0.07813em; }
 html body #timeline article.timeline aside .article.image figure figcaption h4 { font-weight: bold; }
 html body #timeline article.timeline aside .article.image figure#the-first-website picture img { background: black; }
-html body #timeline article.timeline aside .article.full-width { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+html body #timeline article.timeline aside .article.full-width { width: 100%; float: left; padding-left: 0; padding-right: 0; }
 html body #timeline article.timeline aside .article.full-width figure img { width: 100%; }
-html body #timeline article.timeline aside .article.full-width figure figcaption { margin-left: 6.45833em; margin-right: 6.45833em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.full-width figure figcaption { margin-left: 1.25em; margin-right: 1.25em; } }
+html body #timeline article.timeline aside .article.full-width figure figcaption { padding-left: 6.45833em; padding-right: 6.45833em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.full-width figure figcaption { padding-left: 1.25em; padding-right: 1.25em; } }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

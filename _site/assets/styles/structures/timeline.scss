@@ -7,6 +7,7 @@
     @include timeline-internet-applications;
   }
   
+  
   article.timeline {
     margin-bottom: row(1);
     
@@ -46,6 +47,7 @@
 
           figure {
             @include figure;
+            display: none;
             
             &#the-first-website {
               picture img {
@@ -57,8 +59,8 @@
         
         &.full-width {
           @include block;
-          margin-left: 0;
-          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
           
           figure {
             img {
