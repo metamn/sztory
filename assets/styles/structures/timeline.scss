@@ -41,6 +41,12 @@
 
           figure {
             @include figure;
+            
+            &#the-first-website {
+              picture img {
+                background: black;
+              }
+            }
           }
         }
         

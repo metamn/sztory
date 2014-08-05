@@ -1,4 +1,4 @@
-<section id="{{ include.title | downcase | remove:',' | remove:'&' | remove:"'" | remove: '"' | replace:' ', '-' }}">
+<section id="{% include atoms/classname.html title=include.title %}">
   <h3>{{ include.title }}</h3>
   
   <div id="timeline-border"></div>

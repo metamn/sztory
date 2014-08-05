@@ -7,7 +7,7 @@
   {% assign figcaption = include.title %}
 {% endif %}
 
-<figure>
+<figure id="{% include atoms/classname.html title=include.title %}">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source media="(max-width: 30em" srcset="{{ site.url}}/{{ site.images}}/{{ include.mobile }}, {{ site.url}}/{{ site.images}}/{{ include.tablet }} 2x">
