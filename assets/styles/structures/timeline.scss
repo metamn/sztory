@@ -46,7 +46,6 @@
 
           figure {
             @include figure;
-            display: none;
             
             &#the-first-website {
               picture img {
@@ -62,7 +61,6 @@
           margin-right: 0;
           
           figure {
-            
             img {
               width: 100%;
             }
