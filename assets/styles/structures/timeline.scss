@@ -14,8 +14,13 @@
     
     
     .text, .date, .title, .tags {
+      @include block;
       @include container;
       @include typographic-elements;
+    }
+    
+    .title, .date, .tags {
+      cursor: pointer;
     }
     
     .tags {
@@ -41,8 +46,6 @@
       color: $color;
       border-bottom: $gutter/4 solid;
       margin: $gutter/2 0;
-      
-      cursor: pointer;
       
       &:after {
         content: '\21e2';
@@ -86,8 +89,6 @@
     
     
     .title {
-      cursor: pointer;
-      
       h1 {
         font-size: $heading-level-1;
         line-height: 1.25;

@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   
   // Toggle active timeline entry
-  $('#timeline article.timeline .date, #timeline article.timeline .title').click(function() {
+  $('#timeline article.timeline .date, #timeline article.timeline .title, #timeline article.timeline .tags').click(function() {
     $(this).parent().toggleClass('active');
   });
   
