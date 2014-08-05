@@ -87,7 +87,7 @@ html body #timeline article.timeline aside .article.text:first-of-type > h3 { di
 html body #timeline article.timeline aside .article.image { padding-left: 6.45833em; padding-right: 6.45833em; }
 @media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { padding-left: 1.25em; padding-right: 1.25em; } }
 html body #timeline article.timeline aside .article.image > h3 { display: none; }
-html body #timeline article.timeline aside .article.image figure { margin-bottom: 2.5em; display: none; }
+html body #timeline article.timeline aside .article.image figure { margin-bottom: 2.5em; }
 html body #timeline article.timeline aside .article.image figure img { max-width: 100%; }
 html body #timeline article.timeline aside .article.image figure figcaption { max-width: 31.25em; font-family: 'Abel'; font-size: smaller; }
 html body #timeline article.timeline aside .article.image figure figcaption p + p { margin-top: 1.25em; }
