@@ -16,6 +16,52 @@
       @include typographic-elements;
     }
     
+    .date {
+      color: $red;
+      border-bottom: 1px solid;
+      margin: $gutter/2 0;
+      
+      cursor: pointer;
+      
+      &:after {
+        content: '+';
+        display: inline-block;
+        
+        float: right;
+        position: relative;
+        left: col(1);
+        
+        @include below-normal-screen {
+          left: $gutter;
+        }
+      }
+    }
+    
+    aside {
+      article, section {
+        display: none;
+        
+        &.excerpt {
+          display: block;
+        }
+      }
+    }
+    
+    &.active {
+      .date {
+        &:after {
+          content: '\00d7';
+        }
+      }
+      
+      aside {
+        article, section {
+          display: block;
+        }
+      }
+    }
+    
+    
     
     h1 {
       font-size: $heading-level-1;
