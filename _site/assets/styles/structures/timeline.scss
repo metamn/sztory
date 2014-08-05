@@ -17,8 +17,8 @@
     }
     
     .date {
-      color: $red;
-      border-bottom: 1px solid;
+      color: $color;
+      border-bottom: $gutter/4 solid;
       margin: $gutter/2 0;
       
       cursor: pointer;
@@ -26,13 +26,27 @@
       &:after {
         content: '+';
         display: inline-block;
+        font-weight: bold;
+        
+        color: $red;
         
         float: right;
         position: relative;
         left: col(1);
+        margin-right: $gutter;
         
         @include below-normal-screen {
           left: $gutter;
+        }
+      }
+      
+      &.hover {
+        &:after {
+          content: 'click for details ' '\21e2';
+          color: $gray;
+          font-weight: normal;
+          font-style: italic;
+          font-family: 'Abel';
         }
       }
     }
@@ -40,10 +54,6 @@
     aside {
       article, section {
         display: none;
-        
-        &.excerpt {
-          display: block;
-        }
       }
     }
     
