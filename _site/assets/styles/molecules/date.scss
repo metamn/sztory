@@ -2,10 +2,10 @@
   display: block;
   @include circle($size);
   @include border;
+  text-align: center;
   
   span {
-    position: relative;
-    top: $gutter;
-    left: $gutter/2;
+    display: block;
+    margin-top: $gutter;
   }
 }

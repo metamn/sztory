@@ -17,6 +17,6 @@
     <script async src="{{ site.url }}/assets/scripts/picturefill.min.js"></script>
   </head>
   
-  <body class="{{ page.title | downcase | remove:',' | remove:'&' | remove:"'" | remove: '"' | replace:' ', '-' }} {{ page.layout }}">
+  <body class="{% include atoms/classname.html title=page.title %} {{ page.layout }}">
     
     

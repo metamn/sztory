@@ -1,50 +1,74 @@
 @mixin timeline-internet-applications {
-  @include container;
+  @include block;
+  @include container(block);
   @include show-title;
-  margn-top: row(1);
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+  overflow: hidden;
   
   position: relative;
   z-index: 1;
   
+  $date-width: $gutter * 3;
+  $border-width: $gutter/4;
+  
   #timeline-border {
     height: 100%;
-    border-left: $gutter/4 solid;
+    border-left: $border-width solid;
 
     position: absolute;
-    left: $gutter * 2 + $gutter/8;
+    left: ($date-width + $border-width) / 2;
     z-index: 1;
   }
   
   article.timeline {
+    @include block;
+    margin: $gutter 0 0;
+    
     position: relative;
     z-index: 2;
-    margin-top: $gutter*2;
+    
     
     .date, h1{
       float: left;
     }
     
     .date {
-      width: auto;
+      width: $date-width;
       margin: 0;
-      padding: $gutter/2;
       
       time {
-        @include date($gutter*3);
+        @include date($date-width);
       }
     }
     
-    h1 {
-      max-width: $text-width;
-      margin-bottom: 0;
-      margin-top: $gutter;
+    .title {
+      width: calc(100% - #{$date-width});
+      
+      h1 {
+        font-size: 100%;
+        font-weight: bold;
+        margin: $gutter + $gutter/2;
+      }
     }
 
     aside {
       @include block;
-      left: col(1);
+      width: calc(100% - #{$date-width});
+      margin-left: $date-width;
+  
       position: relative;
       top: -$gutter;
+  
+      font-family: 'Abel';
+    
+      p {
+        margin-left: $date-width + $gutter - $gutter/4;
+        
+        @include below-normal-screen {
+          margin-left: $gutter + $gutter/2;
+        }
+      }
     }
 
     .date, aside {

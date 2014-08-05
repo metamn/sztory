@@ -1,12 +1,3 @@
-@mixin container {
-  margin-left: col(1);
-  margin-right: col(1);
-  
-  @include below-normal-screen {
-    margin-left: $gutter;
-    margin-right: $gutter;
-  }
-}
 
 
 /* Center vertically or horizontally
