@@ -41,58 +41,61 @@ html body { font-size: 150%; line-height: 1.5; }
 html body { font-size: 150%; line-height: 1.5; color: #0c0218; background: white; font-family: 'Vollkorn'; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 125%; line-height: 1.5; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 175%; line-height: 1.5; } }
-html body #timeline, html body #internet-applications-timeline { width: 100%; float: left; }
-html body #timeline > h3, html body #internet-applications-timeline > h3 { display: none; }
-html body #timeline article.timeline, html body #internet-applications-timeline article.timeline { margin-bottom: 6.25em; }
-html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title, html body #internet-applications-timeline article.timeline .text, html body #internet-applications-timeline article.timeline .date, html body #internet-applications-timeline article.timeline .title { margin-left: 6.45833em; margin-right: 6.45833em; max-width: 31.25em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title, html body #internet-applications-timeline article.timeline .text, html body #internet-applications-timeline article.timeline .date, html body #internet-applications-timeline article.timeline .title { margin-left: 1.25em; margin-right: 1.25em; } }
-html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p, html body #internet-applications-timeline article.timeline .text p + p, html body #internet-applications-timeline article.timeline .date p + p, html body #internet-applications-timeline article.timeline .title p + p { margin-top: 1.25em; }
-html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a, html body #internet-applications-timeline article.timeline .text a, html body #internet-applications-timeline article.timeline .date a, html body #internet-applications-timeline article.timeline .title a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
-html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover, html body #internet-applications-timeline article.timeline .text a:hover, html body #internet-applications-timeline article.timeline .date a:hover, html body #internet-applications-timeline article.timeline .title a:hover { border-color: #0c0218; }
-html body #timeline article.timeline .text abbr, html body #timeline article.timeline .date abbr, html body #timeline article.timeline .title abbr, html body #internet-applications-timeline article.timeline .text abbr, html body #internet-applications-timeline article.timeline .date abbr, html body #internet-applications-timeline article.timeline .title abbr { font-variant: small-caps; letter-spacing: 0.07813em; font-size: smaller; }
-html body #timeline article.timeline .text blockquote, html body #timeline article.timeline .date blockquote, html body #timeline article.timeline .title blockquote, html body #internet-applications-timeline article.timeline .text blockquote, html body #internet-applications-timeline article.timeline .date blockquote, html body #internet-applications-timeline article.timeline .title blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
-html body #timeline article.timeline .text blockquote .blockquote-source, html body #timeline article.timeline .date blockquote .blockquote-source, html body #timeline article.timeline .title blockquote .blockquote-source, html body #internet-applications-timeline article.timeline .text blockquote .blockquote-source, html body #internet-applications-timeline article.timeline .date blockquote .blockquote-source, html body #internet-applications-timeline article.timeline .title blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
-html body #timeline article.timeline .text blockquote .blockquote-source:before, html body #timeline article.timeline .date blockquote .blockquote-source:before, html body #timeline article.timeline .title blockquote .blockquote-source:before, html body #internet-applications-timeline article.timeline .text blockquote .blockquote-source:before, html body #internet-applications-timeline article.timeline .date blockquote .blockquote-source:before, html body #internet-applications-timeline article.timeline .title blockquote .blockquote-source:before { content: '\2012'; }
-html body #timeline article.timeline .text blockquote p, html body #timeline article.timeline .date blockquote p, html body #timeline article.timeline .title blockquote p, html body #internet-applications-timeline article.timeline .text blockquote p, html body #internet-applications-timeline article.timeline .date blockquote p, html body #internet-applications-timeline article.timeline .title blockquote p { margin-left: 1.25em; }
-html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q, html body #internet-applications-timeline article.timeline .text q, html body #internet-applications-timeline article.timeline .date q, html body #internet-applications-timeline article.timeline .title q { font-style: italic; letter-spacing: 0.07813em; }
-html body #timeline article.timeline h1, html body #internet-applications-timeline article.timeline h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
-html body #timeline article.timeline aside > h3, html body #internet-applications-timeline article.timeline aside > h3 { display: none; }
-html body #timeline article.timeline aside .article, html body #internet-applications-timeline article.timeline aside .article { margin-bottom: 1.25em; }
-html body #timeline article.timeline aside .article.text h3, html body #internet-applications-timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
-html body #timeline article.timeline aside .article.text:first-of-type > h3, html body #internet-applications-timeline article.timeline aside .article.text:first-of-type > h3 { display: none; }
-html body #timeline article.timeline aside .article.image, html body #internet-applications-timeline article.timeline aside .article.image { margin-left: 6.45833em; margin-right: 6.45833em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image, html body #internet-applications-timeline article.timeline aside .article.image { margin-left: 1.25em; margin-right: 1.25em; } }
-html body #timeline article.timeline aside .article.image > h3, html body #internet-applications-timeline article.timeline aside .article.image > h3 { display: none; }
-html body #timeline article.timeline aside .article.image figure, html body #internet-applications-timeline article.timeline aside .article.image figure { margin-bottom: 2.5em; }
-html body #timeline article.timeline aside .article.image figure img, html body #internet-applications-timeline article.timeline aside .article.image figure img { max-width: 100%; }
-html body #timeline article.timeline aside .article.image figure figcaption, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption { max-width: 31.25em; font-family: 'Abel'; font-size: smaller; }
-html body #timeline article.timeline aside .article.image figure figcaption p + p, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption p + p { margin-top: 1.25em; }
-html body #timeline article.timeline aside .article.image figure figcaption a, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
-html body #timeline article.timeline aside .article.image figure figcaption a:hover, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption a:hover { border-color: #0c0218; }
-html body #timeline article.timeline aside .article.image figure figcaption abbr, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption abbr { font-variant: small-caps; letter-spacing: 0.07813em; font-size: smaller; }
-html body #timeline article.timeline aside .article.image figure figcaption blockquote, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
-html body #timeline article.timeline aside .article.image figure figcaption blockquote .blockquote-source, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
-html body #timeline article.timeline aside .article.image figure figcaption blockquote .blockquote-source:before, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption blockquote .blockquote-source:before { content: '\2012'; }
-html body #timeline article.timeline aside .article.image figure figcaption blockquote p, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption blockquote p { margin-left: 1.25em; }
-html body #timeline article.timeline aside .article.image figure figcaption q, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption q { font-style: italic; letter-spacing: 0.07813em; }
-html body #timeline article.timeline aside .article.image figure figcaption h4, html body #internet-applications-timeline article.timeline aside .article.image figure figcaption h4 { font-weight: bold; }
-html body #timeline article.timeline aside .article.image figure#the-first-website picture img, html body #internet-applications-timeline article.timeline aside .article.image figure#the-first-website picture img { background: black; }
-html body #timeline article.timeline aside .article.full-width, html body #internet-applications-timeline article.timeline aside .article.full-width { width: 100%; float: left; margin-left: 0; margin-right: 0; }
-html body #timeline article.timeline aside .article.full-width figure img, html body #internet-applications-timeline article.timeline aside .article.full-width figure img { width: 100%; }
-html body #timeline article.timeline aside .article.full-width figure figcaption, html body #internet-applications-timeline article.timeline aside .article.full-width figure figcaption { margin-left: 6.45833em; margin-right: 6.45833em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.full-width figure figcaption, html body #internet-applications-timeline article.timeline aside .article.full-width figure figcaption { margin-left: 1.25em; margin-right: 1.25em; } }
-html body #internet-applications-timeline { margin-left: 6.45833em; margin-right: 6.45833em; margn-top: 6.25em; position: relative; z-index: 1; }
-@media only screen and (max-width: 79.999em) { html body #internet-applications-timeline { margin-left: 1.25em; margin-right: 1.25em; } }
-html body #internet-applications-timeline > h3 { display: block; }
-html body #internet-applications-timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.65625em; z-index: 1; }
-html body #internet-applications-timeline article.timeline { position: relative; z-index: 2; margin-top: 2.5em; }
-html body #internet-applications-timeline article.timeline .date, html body #internet-applications-timeline article.timeline h1 { float: left; }
-html body #internet-applications-timeline article.timeline .date { width: auto; margin: 0; padding: 0.625em; }
-html body #internet-applications-timeline article.timeline .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #0c0218; }
-html body #internet-applications-timeline article.timeline .date time span { position: relative; top: 1.25em; left: 0.625em; }
-html body #internet-applications-timeline article.timeline h1 { max-width: 31.25em; margin-bottom: 0; margin-top: 1.25em; }
-html body #internet-applications-timeline article.timeline aside { width: 100%; float: left; left: 6.45833em; position: relative; top: -1.25em; }
-html body #internet-applications-timeline article.timeline .date, html body #internet-applications-timeline article.timeline aside { color: #0c0218; background: white; }
+html body #timeline { width: 100%; float: left; }
+html body #timeline > h3 { display: none; }
+html body #timeline #internet-applications-timeline { width: 100%; float: left; margin-left: 6.45833em; margin-right: 6.45833em; width: calc(100% - 12.91667em); margin-top: 1.25em; margin-bottom: 1.25em; overflow: hidden; position: relative; z-index: 1; }
+@media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline { margin-left: 1.25em; margin-right: 1.25em; width: calc(100% - 2.5em); } }
+html body #timeline #internet-applications-timeline > h3 { display: block; }
+html body #timeline #internet-applications-timeline #timeline-border { height: 100%; border-left: 0.3125em solid; position: absolute; left: 2.03125em; z-index: 1; }
+html body #timeline #internet-applications-timeline article.timeline { width: 100%; float: left; margin: 1.25em 0 0; position: relative; z-index: 2; }
+html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline h1 { float: left; }
+html body #timeline #internet-applications-timeline article.timeline .date { width: 3.75em; margin: 0; }
+html body #timeline #internet-applications-timeline article.timeline .date time { display: block; width: 3.75em; height: 3.75em; -webkit-border-radius: 3.75em; -moz-border-radius: 3.75em; -ms-border-radius: 3.75em; -o-border-radius: 3.75em; border-radius: 3.75em; border: 0.3125em solid #0c0218; text-align: center; }
+html body #timeline #internet-applications-timeline article.timeline .date time span { display: block; margin-top: 1.25em; }
+html body #timeline #internet-applications-timeline article.timeline .title { width: calc(100% - 3.75em); }
+html body #timeline #internet-applications-timeline article.timeline .title h1 { font-size: 100%; font-weight: bold; margin: 1.875em; }
+html body #timeline #internet-applications-timeline article.timeline aside { width: 100%; float: left; width: calc(100% - 3.75em); margin-left: 3.75em; position: relative; top: -1.25em; font-family: 'Abel'; }
+html body #timeline #internet-applications-timeline article.timeline aside p { margin-left: 4.6875em; }
+@media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline article.timeline aside p { margin-left: 1.875em; } }
+html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline aside { color: #0c0218; background: white; }
+html body #timeline article.timeline { margin-bottom: 6.25em; }
+html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 6.45833em; margin-right: 6.45833em; max-width: 31.25em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { margin-left: 1.25em; margin-right: 1.25em; } }
+html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
+html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
+html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover { border-color: #0c0218; }
+html body #timeline article.timeline .text abbr, html body #timeline article.timeline .date abbr, html body #timeline article.timeline .title abbr { font-variant: small-caps; letter-spacing: 0.07813em; font-size: smaller; }
+html body #timeline article.timeline .text blockquote, html body #timeline article.timeline .date blockquote, html body #timeline article.timeline .title blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
+html body #timeline article.timeline .text blockquote .blockquote-source, html body #timeline article.timeline .date blockquote .blockquote-source, html body #timeline article.timeline .title blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
+html body #timeline article.timeline .text blockquote .blockquote-source:before, html body #timeline article.timeline .date blockquote .blockquote-source:before, html body #timeline article.timeline .title blockquote .blockquote-source:before { content: '\2012'; }
+html body #timeline article.timeline .text blockquote p, html body #timeline article.timeline .date blockquote p, html body #timeline article.timeline .title blockquote p { margin-left: 1.25em; }
+html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q { font-style: italic; letter-spacing: 0.07813em; }
+html body #timeline article.timeline h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
+html body #timeline article.timeline aside > h3 { display: none; }
+html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
+html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
+html body #timeline article.timeline aside .article.text:first-of-type > h3 { display: none; }
+html body #timeline article.timeline aside .article.image { margin-left: 6.45833em; margin-right: 6.45833em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { margin-left: 1.25em; margin-right: 1.25em; } }
+html body #timeline article.timeline aside .article.image > h3 { display: none; }
+html body #timeline article.timeline aside .article.image figure { margin-bottom: 2.5em; display: none; }
+html body #timeline article.timeline aside .article.image figure img { max-width: 100%; }
+html body #timeline article.timeline aside .article.image figure figcaption { max-width: 31.25em; font-family: 'Abel'; font-size: smaller; }
+html body #timeline article.timeline aside .article.image figure figcaption p + p { margin-top: 1.25em; }
+html body #timeline article.timeline aside .article.image figure figcaption a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
+html body #timeline article.timeline aside .article.image figure figcaption a:hover { border-color: #0c0218; }
+html body #timeline article.timeline aside .article.image figure figcaption abbr { font-variant: small-caps; letter-spacing: 0.07813em; font-size: smaller; }
+html body #timeline article.timeline aside .article.image figure figcaption blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
+html body #timeline article.timeline aside .article.image figure figcaption blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
+html body #timeline article.timeline aside .article.image figure figcaption blockquote .blockquote-source:before { content: '\2012'; }
+html body #timeline article.timeline aside .article.image figure figcaption blockquote p { margin-left: 1.25em; }
+html body #timeline article.timeline aside .article.image figure figcaption q { font-style: italic; letter-spacing: 0.07813em; }
+html body #timeline article.timeline aside .article.image figure figcaption h4 { font-weight: bold; }
+html body #timeline article.timeline aside .article.image figure#the-first-website picture img { background: black; }
+html body #timeline article.timeline aside .article.full-width { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+html body #timeline article.timeline aside .article.full-width figure img { width: 100%; }
+html body #timeline article.timeline aside .article.full-width figure figcaption { margin-left: 6.45833em; margin-right: 6.45833em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.full-width figure figcaption { margin-left: 1.25em; margin-right: 1.25em; } }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

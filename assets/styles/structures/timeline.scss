@@ -2,6 +2,11 @@
   @include block;
   @include hide-title;
   
+  
+  #internet-applications-timeline {
+    @include timeline-internet-applications;
+  }
+  
   article.timeline {
     margin-bottom: row(1);
     
@@ -41,6 +46,7 @@
 
           figure {
             @include figure;
+            display: none;
             
             &#the-first-website {
               picture img {

@@ -1,0 +1,17 @@
+@mixin container($block: false) {
+  margin-left: col(1);
+  margin-right: col(1);
+  
+  @if ($block != false) {
+    width: calc(100% - #{col(2)});
+  }
+  
+  @include below-normal-screen {
+    margin-left: $gutter;
+    margin-right: $gutter;
+    
+    @if ($block != false) {
+      width: calc(100% - #{$gutter * 2});
+    }
+  }
+}
