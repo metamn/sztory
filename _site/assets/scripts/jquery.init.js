@@ -1,27 +1,31 @@
 $(document).ready(function() {
   
+  
+  // Scrolling a full page at once
+  // ---------------------------------------------------
+  
+  // the elements
   var scrollables = $('article.navigation-full-screen');
   
+  // the plugin
   scrollables.waypoint(function(direction) {
-    scrollables.removeClass('visible');
-    
     if (direction == 'down') {
-      var next = $(this).next();
+      var next = $(this);
     }
     if (direction == 'up') {
       var next = $(this).prev();
     }
     
-    next.addClass('visible');
-    $(this).trigger('scroll');
+    // once the scroll done we disable this checker until the next scroll
+    scrollTo(next);
+    scrollables.waypoint('disable');
   }, { 
     offset: '75%'
   });
   
-  
-  scrollables.on('scroll', function() { 
-    console.log('event1');
-    scrollTo(scrollables.filter('.visible'));
+  // on every scroll enable the plugin
+  $(window).scroll(function() {
+    scrollables.waypoint('enable');
   });
   
   // Scroll to an element on the page
