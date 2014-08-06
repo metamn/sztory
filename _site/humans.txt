@@ -10,7 +10,11 @@ Location: Budapest, Hungary
 /* THANKS */
 DNA Mandalas on the first page: Jer Thorp, https://www.flickr.com/photos/blprnt/4498402938/in/photostream/
 Canvas Fireworks: The Codeplayer, http://thecodeplayer.com/walkthrough/canvas-fireworks-tutorial
-http://www.wimklerkx.nl/EN/PROJECTS/IN.html the first webserver
+
+http://www.techweekeurope.co.uk/wp-content/uploads/2013/01/tim-berners-lee.jpg
+http://static4.businessinsider.com/image/a537544b88369f490475e100/marc-andreessen-joins-hp-board.jpg
+http://www.webdesignermag.co.uk/wp-content/uploads/2013/02/EricMeyer.jpg
+
 
 
 /* SITE */
