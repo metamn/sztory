@@ -1,15 +1,34 @@
 $(document).ready(function() {
   
+  var scrollables = $('article.navigation-full-screen');
+  
+  scrollables.waypoint(function(direction) {
+    scrollables.removeClass('visible');
+    
+    if (direction == 'down') {
+      var next = $(this).next();
+    }
+    if (direction == 'up') {
+      var next = $(this).prev();
+    }
+    
+    next.addClass('visible');
+    $(this).trigger('scroll');
+  }, { 
+    offset: '75%'
+  });
   
   
-  // Scroll the whole page at once
-  scrollTo($('article.navigation-full-screen').last());
+  scrollables.on('scroll', function() { 
+    console.log('event1');
+    scrollTo(scrollables.filter('.visible'));
+  });
   
   // Scroll to an element on the page
   function scrollTo(element) {
     $('html, body').animate({
         scrollTop: element.offset().top
-    }, 2000);
+    }, 500);
   }
   
   
