@@ -1,0 +1,17 @@
+@mixin navigation-full-screen {
+  @include full-screen;
+  
+  body {
+    section {
+      @include hide-title;
+
+      article {
+        @include background-image;
+        
+        .image {
+          display: none;
+        }
+      }
+    }
+  }
+}

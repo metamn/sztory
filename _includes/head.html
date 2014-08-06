@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="{% include atoms/classname.html title=page.title %} {{ page.layout }}">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -17,6 +17,6 @@
     <script async src="{{ site.url }}/assets/scripts/picturefill.min.js"></script>
   </head>
   
-  <body class="{% include atoms/classname.html title=page.title %} {{ page.layout }}">
+  <body>
     
     

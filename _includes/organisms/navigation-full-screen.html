@@ -1,0 +1,13 @@
+<article class="navigation-full-screen">
+  <div class="date">
+    {% include molecules/date.html %}
+  </div>
+  
+  <div class="title">
+    <h1>{{ post.title }}</h1>
+  </div>
+  
+  <div class='image'>
+    <img src="{{ site.url }}/assets/images/{{ post.people.first.image }}" alt="{{ post.title }}">
+  </div>
+</article>

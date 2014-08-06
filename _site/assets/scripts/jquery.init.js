@@ -1,16 +1,8 @@
 $(document).ready(function() {
 
-  
-  // Toggle active timeline entry
-  $('#timeline article.timeline .date, #timeline article.timeline .title, #timeline article.timeline .tags').click(function() {
-    $(this).parent().toggleClass('active');
-  });
-  
-  
-  // Gradient background for timeline articles 
-  $('#timeline article.timeline').each(function(index) {
-    gradient = 250 + index * 75;
-    color = 'hsl(' + gradient.toString() + ', 53%, 88%)';
-    $(this).find('.tags ul li span').css({'border-color' : color, 'background' : color});
+  // Add background image to articles
+  $('article.navigation-full-screen').each(function() {
+    var url = $(this).find('img').attr('src');
+    $(this).css('background-image', 'url(' + url + ')');
   });
 });

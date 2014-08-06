@@ -1,13 +1,13 @@
 /*
-Syntax error: Undefined mixin 'typographic-grid'.
-        on line 4 of /home/cs/work/sztory/assets/styles/pages.scss, in `typographic-grid'
-        from line 4 of /home/cs/work/sztory/assets/styles/pages.scss
+Syntax error: Undefined mixin 'navigation-full-screen'.
+        on line 3 of /home/cs/work/sztory/assets/styles/pages.scss, in `navigation-full-screen'
+        from line 3 of /home/cs/work/sztory/assets/styles/pages.scss
 
 1: /home/cs/work/sztory/assets/styles/pages.scss
 
 Backtrace:
-/home/cs/work/sztory/assets/styles/pages.scss:4:in `typographic-grid'
-/home/cs/work/sztory/assets/styles/pages.scss:4
+/home/cs/work/sztory/assets/styles/pages.scss:3:in `navigation-full-screen'
+/home/cs/work/sztory/assets/styles/pages.scss:3
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'typographic-grid'.\A         on line 4 of /home/cs/work/sztory/assets/styles/pages.scss, in `typographic-grid'\A         from line 4 of /home/cs/work/sztory/assets/styles/pages.scss\A \A 1: /home/cs/work/sztory/assets/styles/pages.scss"; }
+  content: "Syntax error: Undefined mixin 'navigation-full-screen'.\A         on line 3 of /home/cs/work/sztory/assets/styles/pages.scss, in `navigation-full-screen'\A         from line 3 of /home/cs/work/sztory/assets/styles/pages.scss\A \A 1: /home/cs/work/sztory/assets/styles/pages.scss"; }
