@@ -31,7 +31,7 @@ $(document).ready(function() {
   // Scroll to an element on the page
   function scrollTo(element) {
     $('html, body').animate({
-        scrollTop: element.offset().top
+      scrollTop: element.offset().top
     }, 500);
   }
   
