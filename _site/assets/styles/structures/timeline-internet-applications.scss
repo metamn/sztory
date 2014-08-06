@@ -23,11 +23,11 @@
     z-index: 1;
   }
   
-  //background: $gray;
+  background: $gray;
   
   article.timeline {
     @include block;
-    margin: $gutter 0 0;
+    padding: $gutter 0 0;
     
     .text, .date, .title {
       padding: 0;
@@ -80,7 +80,7 @@
 
     
     .date, aside {
-      @include color($color, transparent);
+      @include color($color, $gray);
     }
   }
 }
