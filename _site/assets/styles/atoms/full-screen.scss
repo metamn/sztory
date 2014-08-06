@@ -1,0 +1,13 @@
+@mixin full-screen {
+  @include full-screen-height;
+  
+  body, section, article {
+    @include full-screen-height;
+  } 
+}
+
+
+@mixin full-screen-height {
+  height: 100%;
+  position: relative;
+}

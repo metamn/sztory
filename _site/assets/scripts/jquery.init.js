@@ -1,16 +1,48 @@
 $(document).ready(function() {
-
   
-  // Toggle active timeline entry
-  $('#timeline article.timeline .date, #timeline article.timeline .title, #timeline article.timeline .tags').click(function() {
-    $(this).parent().toggleClass('active');
+  
+  // Scrolling a full page at once
+  // ---------------------------------------------------
+  
+  // the elements
+  var scrollables = $('article.navigation-full-screen');
+  
+  // the plugin
+  scrollables.waypoint(function(direction) {
+    if (direction == 'down') {
+      var next = $(this);
+    }
+    if (direction == 'up') {
+      var next = $(this).prev();
+    }
+    
+    // once the scroll done we disable this checker until the next scroll
+    scrollTo(next);
+    scrollables.waypoint('disable');
+  }, { 
+    offset: '75%'
   });
   
-  
-  // Gradient background for timeline articles 
-  $('#timeline article.timeline').each(function(index) {
-    gradient = 250 + index * 75;
-    color = 'hsl(' + gradient.toString() + ', 53%, 88%)';
-    $(this).find('.tags ul li span').css({'border-color' : color, 'background' : color});
+  // on every scroll enable the plugin
+  $(window).scroll(function() {
+    scrollables.waypoint('enable');
   });
+  
+  // Scroll to an element on the page
+  function scrollTo(element) {
+    $('html, body').animate({
+        scrollTop: element.offset().top
+    }, 500);
+  }
+  
+  
+  
+  
+  
+  // Add background image to articles
+  $('article.navigation-full-screen').each(function() {
+    var url = $(this).find('img').attr('src');
+    $(this).css('background-image', 'url(' + url + ')');
+  });
+  
 });

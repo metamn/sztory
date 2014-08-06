@@ -24,22 +24,6 @@
 }
 
 
-@mixin background-image($url) {
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url($url);
-}
-
-
-
-@mixin full-screen {
-  html, body, .container, .container section {
-    height: 100%;
-    position: relative;
-  }
-}
 
 
 @mixin list-inline($margin: $gutter) {

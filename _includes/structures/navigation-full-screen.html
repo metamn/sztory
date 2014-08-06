@@ -1,0 +1,7 @@
+<section id="{% include atoms/classname.html title=include.title %}">
+  <h3>{{ include.title }}</h3>
+  
+  {% for post in include.collection reversed %}
+    {% include organisms/navigation-full-screen.html %}
+  {% endfor %}  
+</section>

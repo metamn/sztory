@@ -1,12 +1,5 @@
-
 html {
-  body {
-    @include typographic-grid;
-    @include color;
-    @include font;
-    
-    #timeline {
-      @include timeline;
-    }
+  &.navigation-full-screen {
+    @include navigation-full-screen;
   }
 }
