@@ -27,7 +27,7 @@
   
   article.timeline {
     @include block;
-    margin: $gutter 0 0;
+    padding: $gutter 0 0;
     
     .text, .date, .title {
       padding: 0;

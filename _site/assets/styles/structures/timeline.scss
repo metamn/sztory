@@ -9,97 +9,56 @@
   
   
   article.timeline {
-    margin-bottom: row(1);
+    @include block;
+    padding-bottom: row(1);
     
-    .text, .date, .title {
-      @include container;
+    
+    .text, .date, .title, .tags, .people {
+      @include block;
+      @include container(block);
       @include typographic-elements;
     }
     
-    .date {
-      color: $color;
-      border-bottom: $gutter/4 solid;
-      margin: $gutter/2 0;
+    .tags {
+      margin-bottom: $gutter;
       
-      cursor: pointer;
-      
-      &:after {
-        content: '\21e2';
-        @include transform(rotate(90deg));
-        display: inline-block;
-        font-weight: bold;
+      ul {
+        @include list-inline;
+        font-size: small;
         
-        color: $grey;
-        
-        float: right;
-        position: relative;
-        left: col(1);
-        margin-right: $gutter;
-        
-        @include below-normal-screen {
-          left: $gutter;
-        }
-      }
-      
-      &.hover {
-        &:after {
-          content: 'click for details ' '\21e2';
-          @include transform(rotate(0deg));
-          color: $green;
-          font-weight: normal;
-          font-style: italic;
-          font-family: 'Abel';
-        }
-      }
-    }
-    
-    aside {
-      article, section {
-        display: none;
-      }
-    }
-    
-    &.active {
-      .date {
-        &:after {
-          content: '\00d7';
-          @include transform(rotate(0deg));
-        }
-        
-        &:hover {
-          &:after {
-            content: 'click to hide ' '\00d7';
-            color: $red;
+        li {
+          margin-bottom: $gutter + $gutter/2;
+          
+          span {
+            border: 1px solid $grey;
+            padding: $gutter/2 $gutter;
+            @include border-radius($gutter/4);
           }
         }
       }
-      
-      aside {
-        article, section {
-          display: block;
-        }
-      }
     }
     
     
     
-    h1 {
-      font-size: $heading-level-1;
-      line-height: 1.25;
-      margin-bottom: $gutter;
+    .title {
+      h1 {
+        font-size: $heading-level-1;
+        line-height: 1.25;
+        margin-bottom: $gutter;
+      }
     }
     
     aside {
       @include hide-title;
       
       .article {
-        margin-bottom: $gutter;
+        padding-bottom: $gutter;
         
         &.text {
           h3 {
             font-style: italic;
             font-size: larger;
-            @include color($grey);
+            @include color($grey, transparent);
           }
           
           &:first-of-type {
@@ -113,7 +72,6 @@
 
           figure {
             @include figure;
-            //display: none;
             
             &#the-first-website {
               picture img {

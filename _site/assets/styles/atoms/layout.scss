@@ -25,7 +25,7 @@
 
 
 @mixin background-image($url) {
-  background-position: center right;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

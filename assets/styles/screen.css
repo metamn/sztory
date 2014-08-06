@@ -48,7 +48,7 @@ html body #timeline #internet-applications-timeline { width: 100%; float: left; 
 html body #timeline #internet-applications-timeline > h3 { display: block; }
 html body #timeline #internet-applications-timeline #timeline-border { padding-left: 6.45833em; padding-right: 6.45833em; height: 100%; border-left: 0.3125em solid; font-size: smaller; position: absolute; margin-left: 2.03125em; z-index: 1; }
 @media only screen and (max-width: 79.999em) { html body #timeline #internet-applications-timeline #timeline-border { padding-left: 1.25em; padding-right: 1.25em; } }
-html body #timeline #internet-applications-timeline article.timeline { width: 100%; float: left; margin: 1.25em 0 0; position: relative; z-index: 2; font-size: smaller; }
+html body #timeline #internet-applications-timeline article.timeline { width: 100%; float: left; padding: 1.25em 0 0; position: relative; z-index: 2; font-size: smaller; }
 html body #timeline #internet-applications-timeline article.timeline .text, html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline .title { padding: 0; }
 html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline h1 { float: left; }
 html body #timeline #internet-applications-timeline article.timeline .date { width: 3.75em; margin: 0; }
@@ -59,30 +59,28 @@ html body #timeline #internet-applications-timeline article.timeline .title h1 {
 html body #timeline #internet-applications-timeline article.timeline aside { width: 100%; float: left; width: calc(100% - 3.75em); margin-left: 3.75em; position: relative; top: -1.25em; font-family: 'Abel'; }
 html body #timeline #internet-applications-timeline article.timeline aside p { margin-left: 1.875em; }
 html body #timeline #internet-applications-timeline article.timeline .date, html body #timeline #internet-applications-timeline article.timeline aside { color: #0c0218; background: #d9d7db; }
-html body #timeline article.timeline { margin-bottom: 6.25em; }
-html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { padding-left: 6.45833em; padding-right: 6.45833em; max-width: 31.25em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title { padding-left: 1.25em; padding-right: 1.25em; } }
-html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p { margin-top: 1.25em; }
-html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
-html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover { border-color: #0c0218; }
-html body #timeline article.timeline .text abbr, html body #timeline article.timeline .date abbr, html body #timeline article.timeline .title abbr { font-variant: small-caps; letter-spacing: 0.07813em; font-size: smaller; }
-html body #timeline article.timeline .text blockquote, html body #timeline article.timeline .date blockquote, html body #timeline article.timeline .title blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
-html body #timeline article.timeline .text blockquote .blockquote-source, html body #timeline article.timeline .date blockquote .blockquote-source, html body #timeline article.timeline .title blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
-html body #timeline article.timeline .text blockquote .blockquote-source:before, html body #timeline article.timeline .date blockquote .blockquote-source:before, html body #timeline article.timeline .title blockquote .blockquote-source:before { content: '\2012'; }
-html body #timeline article.timeline .text blockquote p, html body #timeline article.timeline .date blockquote p, html body #timeline article.timeline .title blockquote p { margin-left: 1.25em; }
-html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q { font-style: italic; letter-spacing: 0.07813em; }
-html body #timeline article.timeline .date { color: #0c0218; border-bottom: 0.3125em solid; margin: 0.625em 0; cursor: pointer; }
-html body #timeline article.timeline .date:after { content: '\21e2'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-weight: bold; color: #d9d7db; float: right; position: relative; left: 6.45833em; margin-right: 1.25em; }
-@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .date:after { left: 1.25em; } }
-html body #timeline article.timeline .date.hover:after { content: 'click for details ' '\21e2'; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); color: #36e2c6; font-weight: normal; font-style: italic; font-family: 'Abel'; }
-html body #timeline article.timeline aside article, html body #timeline article.timeline aside section { display: none; }
-html body #timeline article.timeline.active .date:after { content: '\00d7'; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
-html body #timeline article.timeline.active .date:hover:after { content: 'click to hide ' '\00d7'; color: #e23636; }
-html body #timeline article.timeline.active aside article, html body #timeline article.timeline.active aside section { display: block; }
-html body #timeline article.timeline h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
+html body #timeline article.timeline { width: 100%; float: left; padding-bottom: 6.25em; }
+html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title, html body #timeline article.timeline .tags, html body #timeline article.timeline .people { width: 100%; float: left; padding-left: 6.45833em; padding-right: 6.45833em; width: calc(100% - 12.91667em); max-width: 31.25em; }
+@media only screen and (max-width: 79.999em) { html body #timeline article.timeline .text, html body #timeline article.timeline .date, html body #timeline article.timeline .title, html body #timeline article.timeline .tags, html body #timeline article.timeline .people { padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); } }
+html body #timeline article.timeline .text p + p, html body #timeline article.timeline .date p + p, html body #timeline article.timeline .title p + p, html body #timeline article.timeline .tags p + p, html body #timeline article.timeline .people p + p { margin-top: 1.25em; }
+html body #timeline article.timeline .text a, html body #timeline article.timeline .date a, html body #timeline article.timeline .title a, html body #timeline article.timeline .tags a, html body #timeline article.timeline .people a { color: #0c0218; background: transparent; text-decoration: none; border-bottom: 1px solid #d9d7db; }
+html body #timeline article.timeline .text a:hover, html body #timeline article.timeline .date a:hover, html body #timeline article.timeline .title a:hover, html body #timeline article.timeline .tags a:hover, html body #timeline article.timeline .people a:hover { border-color: #0c0218; }
+html body #timeline article.timeline .text abbr, html body #timeline article.timeline .date abbr, html body #timeline article.timeline .title abbr, html body #timeline article.timeline .tags abbr, html body #timeline article.timeline .people abbr { font-variant: small-caps; letter-spacing: 0.07813em; font-size: smaller; }
+html body #timeline article.timeline .text blockquote, html body #timeline article.timeline .date blockquote, html body #timeline article.timeline .title blockquote, html body #timeline article.timeline .tags blockquote, html body #timeline article.timeline .people blockquote { font-style: italic; letter-spacing: 0.07813em; margin-top: 1.25em; margin-bottom: 1.25em; }
+html body #timeline article.timeline .text blockquote .blockquote-source, html body #timeline article.timeline .date blockquote .blockquote-source, html body #timeline article.timeline .title blockquote .blockquote-source, html body #timeline article.timeline .tags blockquote .blockquote-source, html body #timeline article.timeline .people blockquote .blockquote-source { font-style: normal; letter-spacing: normal; }
+html body #timeline article.timeline .text blockquote .blockquote-source:before, html body #timeline article.timeline .date blockquote .blockquote-source:before, html body #timeline article.timeline .title blockquote .blockquote-source:before, html body #timeline article.timeline .tags blockquote .blockquote-source:before, html body #timeline article.timeline .people blockquote .blockquote-source:before { content: '\2012'; }
+html body #timeline article.timeline .text blockquote p, html body #timeline article.timeline .date blockquote p, html body #timeline article.timeline .title blockquote p, html body #timeline article.timeline .tags blockquote p, html body #timeline article.timeline .people blockquote p { margin-left: 1.25em; }
+html body #timeline article.timeline .text q, html body #timeline article.timeline .date q, html body #timeline article.timeline .title q, html body #timeline article.timeline .tags q, html body #timeline article.timeline .people q { font-style: italic; letter-spacing: 0.07813em; }
+html body #timeline article.timeline .tags { margin-bottom: 1.25em; }
+html body #timeline article.timeline .tags ul { font-size: small; }
+html body #timeline article.timeline .tags ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body #timeline article.timeline .tags ul li:last-of-type { margin-right: 0; }
+html body #timeline article.timeline .tags ul li { margin-bottom: 1.875em; }
+html body #timeline article.timeline .tags ul li span { border: 1px solid #d9d7db; padding: 0.625em 1.25em; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; }
+html body #timeline article.timeline .title h1 { font-size: 1.6154em; line-height: 1.25; margin-bottom: 1.25em; }
 html body #timeline article.timeline aside > h3 { display: none; }
-html body #timeline article.timeline aside .article { margin-bottom: 1.25em; }
-html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: white; }
+html body #timeline article.timeline aside .article { padding-bottom: 1.25em; }
+html body #timeline article.timeline aside .article.text h3 { font-style: italic; font-size: larger; color: #d9d7db; background: transparent; }
 html body #timeline article.timeline aside .article.text:first-of-type > h3 { display: none; }
 html body #timeline article.timeline aside .article.image { padding-left: 6.45833em; padding-right: 6.45833em; }
 @media only screen and (max-width: 79.999em) { html body #timeline article.timeline aside .article.image { padding-left: 1.25em; padding-right: 1.25em; } }
