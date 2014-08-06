@@ -1,5 +1,5 @@
 @mixin background-image($url: '') {
-  background-position: 0 0;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

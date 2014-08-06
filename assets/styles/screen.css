@@ -33,7 +33,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html.navigation-full-screen { height: 100%; position: relative; }
 html.navigation-full-screen body, html.navigation-full-screen section, html.navigation-full-screen article { height: 100%; position: relative; }
 html.navigation-full-screen body section > h3 { display: none; }
-html.navigation-full-screen body section article { background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-image: url(""); }
+html.navigation-full-screen body section article { background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-image: url(""); }
 html.navigation-full-screen body section article .image { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
