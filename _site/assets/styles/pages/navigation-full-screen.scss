@@ -7,10 +7,15 @@
       @include hide-title;
 
       article {
-        @include background-image;
+        @include block;
         
         .image {
+          @include block;
+          @include background-image;
+          
           display: none;
+          height: 80%;
+          padding-bottom: 20%;
         }
       }
     }
